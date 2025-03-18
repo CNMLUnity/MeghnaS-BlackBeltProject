@@ -16,7 +16,12 @@ public class Buttons : MonoBehaviour
     {
         
     }
-    private void Play()
+    public void Play()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void PlayAgain ()
     {
         SceneManager.LoadScene(1);
     }
