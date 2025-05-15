@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Trap : MonoBehaviour
 {
-    public Health health;
+    public Hulth health;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +16,13 @@ public class Trap : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+         if(collision.gameObject.tag == "Player")
+         {
+            SceneManager.LoadScene(3);
+         }
     }
 }
