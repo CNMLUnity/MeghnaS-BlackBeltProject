@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour
 {
+    public Health health;
     // Start is called before the first frame update
     void Start()
     {
