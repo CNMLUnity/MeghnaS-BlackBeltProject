@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Hulth : MonoBehaviour
 {
@@ -16,5 +17,24 @@ public class Hulth : MonoBehaviour
     void Update()
     {
         
+    }
+    void OnTriggerEnter (Collider other)
+    {
+        print("aaaaaaa");
+        if(other.gameObject.tag == "Trap")
+        {
+            lives = 0;
+            LoadScene();
+            print("You suck");
+        }
+    }
+    void LoadScene()
+    {
+        SceneManager.LoadScene(3);
+        Invoke("Lose", 3);
+    }
+    void Lose ()
+    {
+        SceneManager.LoadScene(2);
     }
 }

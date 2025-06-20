@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,18 +10,28 @@ public class PlayerMove : MonoBehaviour
     public float playerSpeed = 2.0f;
     public float jumpHeight = 1.0f;
     public float gravityValue = -9.81f;
+    public Transform cameraTransform;
+    public float horizontalSpeed = 5.0f;
+    public float verticalSpeed = 5.0f;
+    public Vector3 dirVector;
 
     private void Start()
     {
-        controller = gameObject.AddComponent<CharacterController>();
+        controller = gameObject.GetComponent<CharacterController>();
     }
 
     void Update()
     {
-        groundedPlayer = controller.isGrounded;
+
+        
+        //groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
             playerVelocity.y = 0f;
+        }
+        if(Input.GetMouseButtonDown(0))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         // Horizontal input
@@ -31,7 +40,7 @@ public class PlayerMove : MonoBehaviour
 
         if (move != Vector3.zero)
         {
-            transform.forward = move;
+            cameraTransform.forward = move;
         }
 
         // Jump
@@ -44,7 +53,15 @@ public class PlayerMove : MonoBehaviour
         playerVelocity.y += gravityValue * Time.deltaTime;
 
         // Combine horizontal and vertical movement
-        Vector3 finalMove = (move * playerSpeed) + (playerVelocity.y * Vector3.up);
+
+
+        if(Input.GetKeyDown("w")){
+            dirVector = cameraTransform.forward;
+        } else if (Input.GetKeyDown("s")) {
+            dirVector = -cameraTransform.forward;
+        }
+
+        Vector3 finalMove = (dirVector * playerSpeed * move.z) + (playerVelocity.y * Vector3.up);
         controller.Move(finalMove * Time.deltaTime);
     }
 }

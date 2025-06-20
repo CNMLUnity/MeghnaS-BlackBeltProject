@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6293307388172946968}
   - component: {fileID: 704163663358290625}
   - component: {fileID: 5682896446117028791}
+  - component: {fileID: -6673888961466183475}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -152,3 +153,21 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-6673888961466183475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297545686588042054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54d16fca218b5d44a2e7a82bdff3940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  playerVelocity: {x: 0, y: 0, z: 0}
+  groundedPlayer: 0
+  playerSpeed: 2
+  jumpHeight: 1
+  gravityValue: -9.81
