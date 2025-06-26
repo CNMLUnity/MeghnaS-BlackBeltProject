@@ -14,10 +14,12 @@ public class PlayerMove : MonoBehaviour
     public float horizontalSpeed = 5.0f;
     public float verticalSpeed = 5.0f;
     public Vector3 dirVector;
+    public Rigidbody rb;
 
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
+
     }
 
     void Update()
@@ -50,18 +52,30 @@ public class PlayerMove : MonoBehaviour
         }
 
         // Apply gravity
-        playerVelocity.y += gravityValue * Time.deltaTime;
+        //playerVelocity.y += gravityValue * Time.deltaTime;
 
         // Combine horizontal and vertical movement
+        float horInput = Input.GetAxisRaw("Horizontal") * playerSpeed;
+        float verInput = Input.GetAxisRaw("Vertical") * playerSpeed;
+
+        // camera dir
+        Vector3 camForward = cameraTransform.forward;
+        Vector3 camRight = cameraTransform.right;
+
+        camForward.y = 0;
+        camRight.y = 0;
 
 
-        if(Input.GetKeyDown("w")){
-            dirVector = cameraTransform.forward;
-        } else if (Input.GetKeyDown("s")) {
-            dirVector = -cameraTransform.forward;
-        }
+        Vector3 forwardRelative = verInput * camForward;
+        Vector3 rightRelative = horInput * camRight;
 
-        Vector3 finalMove = (dirVector * playerSpeed * move.z) + (playerVelocity.y * Vector3.up);
-        controller.Move(finalMove * Time.deltaTime);
+
+        Vector3 moveDir = forwardRelative + rightRelative;
+
+
+        rb.velocity = new Vector3(moveDir.x, rb.velocity.y, verInput);
+
+        
+
     }
 }

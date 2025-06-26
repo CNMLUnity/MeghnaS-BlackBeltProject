@@ -1280,12 +1280,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6673888961466183475, guid: 833057fa113caad48bcc13745770272f, type: 3}
       propertyPath: groundedPlayer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -6673888961466183475, guid: 833057fa113caad48bcc13745770272f, type: 3}
       propertyPath: cameraTransform
       value: 
-      objectReference: {fileID: 1279639906}
+      objectReference: {fileID: 53011660}
     - target: {fileID: 704163663358290625, guid: 833057fa113caad48bcc13745770272f, type: 3}
       propertyPath: lives
       value: 3
