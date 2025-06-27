@@ -37,13 +37,7 @@ public class PlayerMove : MonoBehaviour
         }
 
         // Horizontal input
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        move = Vector3.ClampMagnitude(move, 1f); // Optional: prevents faster diagonal movement
 
-        if (move != Vector3.zero)
-        {
-            cameraTransform.forward = move;
-        }
 
         // Jump
         if (Input.GetButtonDown("Jump") && groundedPlayer)
@@ -65,6 +59,8 @@ public class PlayerMove : MonoBehaviour
         camForward.y = 0;
         camRight.y = 0;
 
+        Debug.DrawRay(transform.position, camForward * 40, Color.red);
+        Debug.DrawRay(transform.position, camRight * 40, Color.green);
 
         Vector3 forwardRelative = verInput * camForward;
         Vector3 rightRelative = horInput * camRight;
@@ -72,8 +68,10 @@ public class PlayerMove : MonoBehaviour
 
         Vector3 moveDir = forwardRelative + rightRelative;
 
+        Debug.DrawRay(transform.position, moveDir * 40, Color.blue);
 
-        rb.velocity = new Vector3(moveDir.x, rb.velocity.y, verInput);
+        controller.Move(moveDir);
+        gameObject.transform.rotation = Quaternion.Euler(moveDir);
 
         
 
