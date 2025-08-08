@@ -5,10 +5,11 @@ using UnityEngine;
 public class Deactivate : MonoBehaviour
 {
     public GameObject Canvas;
+    public GameObject AlsoCanvas;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //AlsoCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -19,5 +20,6 @@ public class Deactivate : MonoBehaviour
     public void ByeByeCanvas()
     {
         Canvas.SetActive(false);
+        AlsoCanvas.SetActive(true);
     }
 }
