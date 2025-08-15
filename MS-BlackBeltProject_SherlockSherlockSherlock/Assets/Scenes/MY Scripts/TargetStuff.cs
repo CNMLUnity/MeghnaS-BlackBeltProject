@@ -9,7 +9,8 @@ public class TargetStuff : MonoBehaviour
     RaycastHit hit;
     public GameObject[] targets;
     private int targetIndex = 0;
-    
+    public GameObject Circle;
+    public  Timer timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,17 +25,29 @@ public class TargetStuff : MonoBehaviour
         if(Physics.Raycast(ray, out hit))
         {
             Debug.Log(hit.transform.gameObject);
-            if(Input.GetMouseButtonDown(0))
+            if(Input.GetMouseButtonDown(0) && hit.transform.CompareTag("Target"))
             {
+                Debug.Log(hit.transform.gameObject);
                 print ("hit!");
                 targets[targetIndex].SetActive(false);
                 targetIndex++;
-                if(targetIndex >= targets.Length) 
+                Debug.Log("next target"); 
+                if(targetIndex >= targets.Length && timer.timeLeft >= 0) 
                 {
                     SceneManager.LoadScene(7);
                 }
                 targets[targetIndex].SetActive(true);
             }
+
         }
+            if(timer.BoutonClicked && timer.timeLeft < 0)
+            {
+                SceneManager.LoadScene(3);
+                Invoke("ReloadScene", 5);
+            }
+    }
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(6);
     }
 }
