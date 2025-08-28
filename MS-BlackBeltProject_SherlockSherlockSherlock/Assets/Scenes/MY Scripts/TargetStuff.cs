@@ -24,14 +24,14 @@ public class TargetStuff : MonoBehaviour
         Debug.DrawRay(ray.origin, ray.direction*100, Color.green);
         if(Physics.Raycast(ray, out hit))
         {
-            Debug.Log(hit.transform.gameObject);
+            //Debug.Log(hit.transform.gameObject);
             if(Input.GetMouseButtonDown(0) && hit.transform.CompareTag("Target"))
             {
-                Debug.Log(hit.transform.gameObject);
-                print ("hit!");
+                //Debug.Log(hit.transform.gameObject);
+                //print ("hit!");
                 targets[targetIndex].SetActive(false);
                 targetIndex++;
-                Debug.Log("next target"); 
+                //Debug.Log("next target"); 
                 if(targetIndex >= targets.Length && timer.timeLeft >= 0) 
                 {
                     SceneManager.LoadScene(7);

@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     //public GameObject Time;
     public int number;
     public TMP_Text eeeee;
+    public TMP_Text timeheading;
     public bool BoutonClicked = false;
     public float startTime;
     public float elapsedTime;
@@ -16,9 +17,8 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        number = 5;
-        eeeee.text = number.ToString();
-        // SHOW UP!!!
+       eeeee.enabled = false;
+       timeheading.enabled = false;
     }
     
     public void BootonClicked()
@@ -32,15 +32,15 @@ public class Timer : MonoBehaviour
     {
         if(BoutonClicked == true)
         {
+            timeheading.enabled = true;
+            eeeee.enabled = true;
+            number = 5;
+            eeeee.text = number.ToString();
             elapsedTime = Time.time - startTime;
             timeLeft = 5 - elapsedTime;
             number --;
-            print("SHerlockio");
+            //print("SHerlockio");
             eeeee.text = timeLeft.ToString("0.00");
         }
     }
-    //public void Increment()
-    //{
-      
-    //}
 }
