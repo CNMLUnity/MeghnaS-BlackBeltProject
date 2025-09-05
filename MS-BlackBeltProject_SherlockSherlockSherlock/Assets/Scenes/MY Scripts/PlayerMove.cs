@@ -5,75 +5,35 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public CharacterController controller;
-    public Vector3 playerVelocity;
-    public bool groundedPlayer;
-    public float playerSpeed = 2.0f;
-    public float jumpHeight = 1.0f;
-    public float gravityValue = -9.81f;
-    public Transform cameraTransform;
-    public float horizontalSpeed = 5.0f;
-    public float verticalSpeed = 5.0f;
-    public Vector3 dirVector;
-    public Rigidbody rb;
+    public float speed = 10f;
+    public float rotationSpeed = 100.0f;
+    public Transform playerTransform;
+    public bool onGround;
+    private Rigidbody rb;
+    public float gug = 0f;
 
-    private void Start()
+    public void Start()
     {
+        onGround = false;
         controller = gameObject.GetComponent<CharacterController>();
-
+        playerTransform = gameObject.transform;
     }
 
     void Update()
     {
-
-        
-        //groundedPlayer = controller.isGrounded;
-        if (groundedPlayer && playerVelocity.y < 0)
+        float horizontalInput = -Input.GetAxis("Horizontal") * speed;
+        float verticalInput = Input.GetAxis("Vertical") * speed;
+        gug += verticalInput;
+        Vector3 move = playerTransform.forward * horizontalInput + playerTransform.right * verticalInput;
+        Debug.Log(move);
+        controller.Move(move * Time.deltaTime);
+        if(Input.GetKeyDown("space"))
         {
-            playerVelocity.y = 0f;
+            RaycastHit hit;
+            if(Physics.SphereCast(transform.position, 0.008f, transform.up * -1, out hit, 2))
+            {
+                rb.AddForce(transform.up * 400);
+            }
         }
-        if(Input.GetMouseButtonDown(0))
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-
-        // Horizontal input
-
-
-        // Jump
-        if (Input.GetButtonDown("Jump") && groundedPlayer)
-        {
-            playerVelocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravityValue);
-        }
-
-        // Apply gravity
-        //playerVelocity.y += gravityValue * Time.deltaTime;
-
-        // Combine horizontal and vertical movement
-        float horInput = Input.GetAxisRaw("Horizontal") * playerSpeed;
-        float verInput = Input.GetAxisRaw("Vertical") * playerSpeed;
-
-        // camera dir
-        Vector3 camForward = cameraTransform.forward;
-        Vector3 camRight = cameraTransform.right;
-
-        camForward.y = 0;
-        camRight.y = 0;
-
-        Debug.DrawRay(transform.position, camForward * 40, Color.red);
-        Debug.DrawRay(transform.position, camRight * 40, Color.green);
-
-        Vector3 forwardRelative = verInput * camForward;
-        Vector3 rightRelative = horInput * camRight;
-
-
-        Vector3 moveDir = forwardRelative + rightRelative;
-
-        Debug.DrawRay(transform.position, moveDir * 40, Color.blue);
-
-        controller.Move(moveDir);
-        gameObject.transform.rotation = Quaternion.Euler(moveDir);
-
-        
-
     }
 }
