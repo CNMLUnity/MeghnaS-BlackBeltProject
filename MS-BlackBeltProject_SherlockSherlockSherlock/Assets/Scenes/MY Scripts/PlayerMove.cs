@@ -11,9 +11,14 @@ public class PlayerMove : MonoBehaviour
     public bool onGround;
     private Rigidbody rb;
     public float gug = 0f;
+    private float gag;
+    private Animator yo;
+    private Animation walk;
+    private Animation fall;
 
     public void Start()
     {
+        gag = 0.0f;
         onGround = false;
         controller = gameObject.GetComponent<CharacterController>();
         playerTransform = gameObject.transform;
@@ -23,16 +28,31 @@ public class PlayerMove : MonoBehaviour
     {
         float horizontalInput = -Input.GetAxis("Horizontal") * speed;
         float verticalInput = Input.GetAxis("Vertical") * speed;
+        walk.Play();
         gug += verticalInput;
+        if(!controller.isGrounded)
+        {
+            //gag is the codon for glutamine
+            gag -= 15f * Time.deltaTime;
+            print("Aaaaaaaahhhhhh!");
+            fall.Play();
+        }
+        else if(Input.GetKeyDown("space"))
+        {
+            gag = 10;
+        }
         Vector3 move = playerTransform.forward * horizontalInput + playerTransform.right * verticalInput;
+        move += new Vector3(0.0f, gag, 0.0f);
         Debug.Log(move);
         controller.Move(move * Time.deltaTime);
+        yo.SetFloat("Speed", move.magnitude);
         if(Input.GetKeyDown("space"))
         {
             RaycastHit hit;
             if(Physics.SphereCast(transform.position, 0.008f, transform.up * -1, out hit, 2))
             {
                 rb.AddForce(transform.up * 400);
+                yo.SetTrigger("JUmp");
             }
         }
     }
