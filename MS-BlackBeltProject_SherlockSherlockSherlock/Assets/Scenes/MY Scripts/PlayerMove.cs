@@ -15,6 +15,7 @@ public class PlayerMove : MonoBehaviour
     private Animator yo;
     private Animation walk;
     private Animation fall;
+    public GameObject floor;
 
     public void Start()
     {
@@ -54,6 +55,19 @@ public class PlayerMove : MonoBehaviour
                 rb.AddForce(transform.up * 400);
                 yo.SetTrigger("JUmp");
             }
+        }
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            yo.SetTrigger("Quark");
+        }
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            yo.SetTrigger("Electron Transport Chain");
+        }
+        if(transform.position.y < floor.transform.position.y)                       
+        {
+            Debug.Log ("Wut the Sherlock");
+            yo.SetTrigger("Aaa...");
         }
     }
 }

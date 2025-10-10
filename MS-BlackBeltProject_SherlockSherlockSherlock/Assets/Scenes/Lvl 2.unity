@@ -1709,6 +1709,7 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   onGround: 0
   gug: 0
+  floor: {fileID: 2035749870}
 --- !u!1001 &1463223249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2360,7 +2361,7 @@ GameObject:
   - component: {fileID: 2035749872}
   m_Layer: 0
   m_Name: Start
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
