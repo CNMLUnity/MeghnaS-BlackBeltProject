@@ -43,14 +43,15 @@ public class PlayerMove : MonoBehaviour
         else if(Input.GetKeyDown("space"))
         {
             gag = 10;
-            yo.SetBool("JUmp", true);
-            yo.SetBool("JUmp", false);
+            yo.SetTrigger("JUmp");
+
         }
         Vector3 move = playerTransform.forward * verticalInput + playerTransform.right * -horizontalInput;
+        Debug.Log(move.normalized);
+        yo.SetFloat("Speed", move.magnitude);
         move += new Vector3(0.0f, gag, 0.0f);
         controller.Move(move * Time.deltaTime);
-        Debug.Log(move.magnitude);
-        yo.SetFloat("Speed", move.magnitude);
+
         if(Input.GetKeyDown("space"))
         {
             RaycastHit hit;
