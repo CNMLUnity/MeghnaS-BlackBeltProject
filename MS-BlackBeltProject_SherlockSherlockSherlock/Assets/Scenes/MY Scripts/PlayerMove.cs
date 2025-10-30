@@ -47,10 +47,12 @@ public class PlayerMove : MonoBehaviour
 
         }
         Vector3 move = playerTransform.forward * verticalInput + playerTransform.right * -horizontalInput;
+        //print(move);
         Debug.Log(move.normalized);
         yo.SetFloat("Speed", move.magnitude);
         move += new Vector3(0.0f, gag, 0.0f);
         controller.Move(move * Time.deltaTime);
+        print(horizontalInput);
 
         if(Input.GetKeyDown("space"))
         {
@@ -76,18 +78,23 @@ public class PlayerMove : MonoBehaviour
         {
             yo.SetTrigger("Electron Transport Chain");
         }
-        if(transform.position.y < floor.transform.position.y)                       
+        if (transform.position.y < floor.transform.position.y)
         {
-            Debug.Log ("Wut the Sherlock");
+            Debug.Log("Wut the Sherlock");
             yo.SetTrigger("Aaa...");
+            //Invoke("Dead", 5);
         }
-    }
-    void Dead()
+    if (move.z < 0)
     {
-        if(health == 0)
-        {
-            yo.SetTrigger("Health");
-            SceneManager.LoadScene(2);
-        }
+        yo.SetTrigger("deeKlunk");
     }
+    if(move.x > 0)
+    {
+      yo.SetTrigger("Lambeosaurus");
+    }
+    }
+   // void Dead()
+    //{
+    //    SceneManager.LoadScene(2);
+    //}
 }
