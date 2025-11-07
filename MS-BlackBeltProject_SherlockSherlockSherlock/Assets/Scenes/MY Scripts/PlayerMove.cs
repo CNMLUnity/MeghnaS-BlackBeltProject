@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
+    [Header("PLAYER MOVEMENT")]
     public CharacterController controller;
     public float speed = 10f;
     public float rotationSpeed = 100.0f;
@@ -12,14 +13,23 @@ public class PlayerMove : MonoBehaviour
     public bool onGround;
     private Rigidbody rb;
     public float gug = 0f;
+    [Header("Animations")]
     private float gag;
     private Animator yo;
     private Animation walk;
     private Animation fall;
     public GameObject floor;
-    public float health = 1;
+    //public float health = 1;
+    public bool isPunching;
+    public bool isKicking;
+    [Header("Camera")]
+    public Transform camTransform;
+    public float sensitivity = 2f; // Adjust sensitivity as needed
 
-    public void Start()
+    public GameObject lookTarget;
+
+
+    void Start()
     {
         gag = 0.0f;
         onGround = false;
@@ -27,6 +37,8 @@ public class PlayerMove : MonoBehaviour
         playerTransform = gameObject.transform;
         yo = GetComponent<Animator>();
         yo.SetBool("JUmp", false);
+        isPunching = false;
+        isKicking = false;
     }
 
     void Update()
@@ -68,15 +80,40 @@ public class PlayerMove : MonoBehaviour
         }
         //else if (transform.position.y = floor.transform.position.y)
         //{
-//            yo.SetBool("JUmp", false);
+        //yo.SetBool("JUmp", false);
         //}
+
+        //CONNECTS MOUSE TO CAMERA
+        // Get mouse input
+        float mouseX = Input.GetAxis("Mouse X") * sensitivity;
+        float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
+        // Accumulate rotation
+
+        // Clamp vertical rotation to prevent flipping
+        // rotationX = Mathf.Clamp(rotationX, -90f, 90f);
+        // Apply rotation to the camera's transform
+        // transform.localRotation = Quaternion.Euler(0f, rotationY, 0f); 
+        transform.Rotate(0f, mouseX, 0f);
+        lookTarget.transform.Rotate(-mouseY, 0f, 0f);
+        //CONNECTS PLAYER TO CAMERA POSITION
+        // if (camTransform != null)
+        //     {
+        //         // Get the camera's Y-axis rotation (yaw)
+        //         float cameraYaw = camTransform.eulerAngles.y;
+        //         // Create a new rotation for the player based on the camera's yaw
+        //         Quaternion targetRotation = Quaternion.Euler(0f, cameraYaw, 0f);
+        //         // Smoothly rotate the player towards the target rotation
+        //         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+        //     }
         if(Input.GetKeyDown(KeyCode.Q))
         {
             yo.SetTrigger("Quark");
+            isPunching = true;
         }
         if(Input.GetKeyDown(KeyCode.E))
         {
             yo.SetTrigger("Electron Transport Chain");
+            isKicking = true;
         }
         if (transform.position.y < floor.transform.position.y)
         {
@@ -84,14 +121,6 @@ public class PlayerMove : MonoBehaviour
             yo.SetTrigger("Aaa...");
             //Invoke("Dead", 5);
         }
-    if (move.z < 0)
-    {
-        yo.SetTrigger("deeKlunk");
-    }
-    if(move.x > 0)
-    {
-      yo.SetTrigger("Lambeosaurus");
-    }
     }
    // void Dead()
     //{
