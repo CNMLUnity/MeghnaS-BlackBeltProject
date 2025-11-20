@@ -94,7 +94,7 @@ public class PlayerMove : MonoBehaviour
         // Apply rotation to the camera's transform
         // transform.localRotation = Quaternion.Euler(0f, rotationY, 0f); 
         transform.Rotate(0f, mouseX, 0f);
-        lookTarget.transform.Rotate(-mouseY, 0f, 0f);
+        lookTarget.transform.Rotate(mouseY, 0f, 0f);
         //CONNECTS PLAYER TO CAMERA POSITION
         // if (camTransform != null)
         //     {

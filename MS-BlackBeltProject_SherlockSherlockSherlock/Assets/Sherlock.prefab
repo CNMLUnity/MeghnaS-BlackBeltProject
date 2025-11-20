@@ -170,6 +170,7 @@ MonoBehaviour:
   isKicking: 0
   camTransform: {fileID: 0}
   sensitivity: 2
+  lookTarget: {fileID: 0}
 --- !u!143 &81967999508403424
 CharacterController:
   m_ObjectHideFlags: 0
@@ -195,4 +196,4 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.98, z: 0}
