@@ -1143,6 +1143,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075933989}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1154692814 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4616194539673086126, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
+  m_PrefabInstance: {fileID: 3627015419071731898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1563900100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,7 +1268,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8086127115615759397, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
   m_PrefabInstance: {fileID: 3627015419071731898}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1665578112
+--- !u!114 &1665578116
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1567,14 +1572,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ca1248f7e21a86458012be22fbe001a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1992709116}
+  player: {fileID: 0}
   horizontalSpeed: 5
   verticalSpeed: 5
---- !u!1 &1992709116 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 105915129253004288, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
-  m_PrefabInstance: {fileID: 3627015419071731898}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2013940379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,7 +1900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626881250385111733, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 58.82
+      value: 60.64
       objectReference: {fileID: 0}
     - target: {fileID: 626881250385111733, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1986,6 +1986,10 @@ PrefabInstance:
       propertyPath: camTransform
       value: 
       objectReference: {fileID: 344285106}
+    - target: {fileID: 1157115676488574889, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1154692814}
     - target: {fileID: 5907571340346791676, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.07228137
@@ -2077,7 +2081,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8086127115615759397, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1665578112}
+      addedObject: {fileID: 1665578116}
   m_SourcePrefab: {fileID: 100100000, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

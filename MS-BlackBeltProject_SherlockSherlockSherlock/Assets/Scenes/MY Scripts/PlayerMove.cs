@@ -28,6 +28,8 @@ public class PlayerMove : MonoBehaviour
 
     public GameObject lookTarget;
 
+    private float cameraRotX;
+
 
     void Start()
     {
@@ -90,11 +92,21 @@ public class PlayerMove : MonoBehaviour
         // Accumulate rotation
 
         // Clamp vertical rotation to prevent flipping
-        // rotationX = Mathf.Clamp(rotationX, -90f, 90f);
+        // mouseY = Mathf.Clamp(mouseY, -90f, 90f);
         // Apply rotation to the camera's transform
         // transform.localRotation = Quaternion.Euler(0f, rotationY, 0f); 
+        // transform.Rotate(-90f, mouseY, 90f);
+        
+        cameraRotX -= mouseY;
+        cameraRotX = Mathf.Clamp(cameraRotX, -45f, 45f);
+        // Accumulate Yaw (Y-axis)
+        // cameraRotY += mouseX; // Accumulate horizontal movement
+        // Apply BOTH rotations to the SAME camera Transform
+        // transform.localRotation = Quaternion.Euler(cameraRotX, cameraRotY, 0.0f);
+
+        lookTarget.transform.localRotation = Quaternion.Euler(cameraRotX, 0.0f, 0.0f);
+
         transform.Rotate(0f, mouseX, 0f);
-        lookTarget.transform.Rotate(mouseY, 0f, 0f);
         //CONNECTS PLAYER TO CAMERA POSITION
         // if (camTransform != null)
         //     {
@@ -127,3 +139,4 @@ public class PlayerMove : MonoBehaviour
     //    SceneManager.LoadScene(2);
     //}
 }
+//This comment will fix the camera because it is writtent by me the great.
