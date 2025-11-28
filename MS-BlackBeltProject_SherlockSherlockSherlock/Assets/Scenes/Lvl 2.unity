@@ -836,7 +836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e32dbb0ea6450af4eb81f11c379c735c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 61.319
+      value: 61.307
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e32dbb0ea6450af4eb81f11c379c735c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1334,11 +1334,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7937357814948689781, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
   m_PrefabInstance: {fileID: 3627015419071731898}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1642693195 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7076593473595679300, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
-  m_PrefabInstance: {fileID: 3627015419071731898}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1665578107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8086127115615759397, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
@@ -1356,6 +1351,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1681299850 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2996992727520308888, guid: a7fc6d57cb5d39941927423903747ab7, type: 3}
+  m_PrefabInstance: {fileID: 3627015419071731898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1813636480
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,10 +1831,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9462c9d4540f9b4d86a01016526927b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 5
+  target: {fileID: 1681299850}
+  speed: 10
   handcuffs: {fileID: 2100576249}
-  Player: {fileID: 1642693195}
+  Player: {fileID: 1681299850}
 --- !u!1 &2100576249 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e32dbb0ea6450af4eb81f11c379c735c, type: 3}
