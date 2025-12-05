@@ -16,16 +16,25 @@ public class BobbyArrest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(arrest.handcuffs.SetActive(true))
+        if(arrest.handcuffs.activeSelf == true)
         {
             hasHandcuffs = true;
         }
     }
-    void OnCollisionEnter (Collision collision)
+
+    void OnCollisionEnter(Collision collision)
     {
+        Debug.LogWarning("hi");
         if(collision.gameObject.tag == "Player" && hasHandcuffs == true)
         {
-             SceneManager.LoadScene(8);
+            Debug.LogWarning("Player has collided with handcuffs");
+            SceneManager.LoadScene(8);
         }
     }
+    /*
+        Notes from dunedin 
+
+        the player controller can only collide with trigger colliders so set the trap to be is trigger and use is trigger function here
+    */
+    
 }
