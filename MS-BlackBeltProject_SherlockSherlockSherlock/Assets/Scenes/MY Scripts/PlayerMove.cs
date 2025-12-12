@@ -42,7 +42,7 @@ public class PlayerMove : MonoBehaviour
         isPunching = false;
         isKicking = false;
     }
-
+//sffsdf
     void Update()
     {
         float horizontalInput = -Input.GetAxis("Horizontal") * speed;
@@ -73,7 +73,7 @@ public class PlayerMove : MonoBehaviour
             RaycastHit hit;
             if(Physics.SphereCast(transform.position, 0.008f, transform.up * -1, out hit, 2))
             {
-                rb.AddForce(transform.up * 400);
+                //rb.AddForce(transform.up * 400);
             }
         }
         if(transform.position.y > floor.transform.position.y)

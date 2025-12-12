@@ -17,8 +17,5 @@ public class TEST5 : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        Debug.LogWarning("hi");
-    }
+
 }

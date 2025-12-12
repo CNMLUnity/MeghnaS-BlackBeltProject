@@ -19,16 +19,20 @@ public class BobbyArrest : MonoBehaviour
         if(arrest.handcuffs.activeSelf == true)
         {
             hasHandcuffs = true;
+            Debug.Log(hasHandcuffs);
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        Debug.LogWarning("hi");
-        if(collision.gameObject.tag == "Player" && hasHandcuffs == true)
+        Debug.LogWarning(other.gameObject.tag);
+        Debug.LogWarning(hasHandcuffs);
+        if(other.gameObject.tag == "Player" && hasHandcuffs == true)
         {
-            Debug.LogWarning("Player has collided with handcuffs");
-            SceneManager.LoadScene(8);
+            Debug.LogWarning(hasHandcuffs);
+            //Debug.LogWarning("Player has collided with handcuffs");
+            Debug.LogError("Player has entered trigger");
+            SceneManager.LoadScene(3);
         }
     }
     /*
