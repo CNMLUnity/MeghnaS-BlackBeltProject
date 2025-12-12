@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMove : MonoBehaviour
 {
     [Header("PLAYER MOVEMENT")]
+    private bool isMoving;
     public CharacterController controller;
     public float speed = 10f;
     public float rotationSpeed = 100.0f;
@@ -33,6 +34,7 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
+        isMoving = false;
         gag = 0.0f;
         onGround = false;
         controller = gameObject.GetComponent<CharacterController>();
@@ -51,11 +53,13 @@ public class PlayerMove : MonoBehaviour
         if(!controller.isGrounded)
         {
             //gag is the codon for glutamine
+            isMoving = true;
             gag -= 15f * Time.deltaTime;
             print("Aaaaaaaahhhhhh!");
         }
         else if(Input.GetKeyDown("space"))
         {
+            isMoving = true;
             gag = 10;
             yo.SetTrigger("JUmp");
 
@@ -73,6 +77,7 @@ public class PlayerMove : MonoBehaviour
             RaycastHit hit;
             if(Physics.SphereCast(transform.position, 0.008f, transform.up * -1, out hit, 2))
             {
+                isMoving = true;
                 //rb.AddForce(transform.up * 400);
             }
         }
@@ -121,16 +126,19 @@ public class PlayerMove : MonoBehaviour
         {
             yo.SetTrigger("Quark");
             isPunching = true;
+            isMoving = true;
         }
         if(Input.GetKeyDown(KeyCode.E))
         {
             yo.SetTrigger("Electron Transport Chain");
             isKicking = true;
+            isMoving = true;
         }
         if (transform.position.y < floor.transform.position.y)
         {
             Debug.Log("Wut the Sherlock");
             yo.SetTrigger("Aaa...");
+            isMoving = false;
             //Invoke("Dead", 5);
         }
     }
