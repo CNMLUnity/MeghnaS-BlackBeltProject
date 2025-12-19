@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Trap : MonoBehaviour
 {
-    public Hulth health;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +19,9 @@ public class Trap : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-         if(collision.gameObject.tag == "Player")
-         {
+        if(collision.gameObject.tag == "Player")
+        {
             SceneManager.LoadScene(3);
-         }
+        }
     }
 }

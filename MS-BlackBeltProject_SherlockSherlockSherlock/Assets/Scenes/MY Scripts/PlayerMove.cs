@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
     [Header("PLAYER MOVEMENT")]
-    private bool isMoving;
     public CharacterController controller;
     public float speed = 10f;
     public float rotationSpeed = 100.0f;
@@ -34,7 +34,6 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
-        isMoving = false;
         gag = 0.0f;
         onGround = false;
         controller = gameObject.GetComponent<CharacterController>();
@@ -53,19 +52,17 @@ public class PlayerMove : MonoBehaviour
         if(!controller.isGrounded)
         {
             //gag is the codon for glutamine
-            isMoving = true;
             gag -= 15f * Time.deltaTime;
             print("Aaaaaaaahhhhhh!");
         }
         else if(Input.GetKeyDown("space"))
         {
-            isMoving = true;
             gag = 10;
             yo.SetTrigger("JUmp");
 
         }
         Vector3 move = playerTransform.forward * verticalInput + playerTransform.right * -horizontalInput;
-        //print(move);
+        //print(move)
         Debug.Log(move.normalized);
         yo.SetFloat("Speed", move.magnitude);
         move += new Vector3(0.0f, gag, 0.0f);
@@ -77,7 +74,6 @@ public class PlayerMove : MonoBehaviour
             RaycastHit hit;
             if(Physics.SphereCast(transform.position, 0.008f, transform.up * -1, out hit, 2))
             {
-                isMoving = true;
                 //rb.AddForce(transform.up * 400);
             }
         }
@@ -126,20 +122,28 @@ public class PlayerMove : MonoBehaviour
         {
             yo.SetTrigger("Quark");
             isPunching = true;
-            isMoving = true;
         }
         if(Input.GetKeyDown(KeyCode.E))
         {
             yo.SetTrigger("Electron Transport Chain");
             isKicking = true;
-            isMoving = true;
         }
         if (transform.position.y < floor.transform.position.y)
         {
-            Debug.Log("Wut the Sherlock");
             yo.SetTrigger("Aaa...");
-            isMoving = false;
+            print("Start dying");
+            Debug.Log("Wut the Sherlock");
+            controller.Move(Vector3.down * 5 * Time.deltaTime);
+            speed = 0f;
+            gag = 0f;
             //Invoke("Dead", 5);
+        }
+    }
+    void OnTriggerEnter (Collider other)
+    {
+        if(other.CompareTag("Water"))
+        {
+            SceneManager.LoadScene(2);
         }
     }
    // void Dead()
