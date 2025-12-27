@@ -99,7 +99,7 @@ public class PlayerMove : MonoBehaviour
         // transform.Rotate(-90f, mouseY, 90f);
         
         cameraRotX -= mouseY;
-        cameraRotX = Mathf.Clamp(cameraRotX, -45f, 45f);
+        cameraRotX = Mathf.Clamp(cameraRotX, -75f, 75f);
         // Accumulate Yaw (Y-axis)
         // cameraRotY += mouseX; // Accumulate horizontal movement
         // Apply BOTH rotations to the SAME camera Transform
