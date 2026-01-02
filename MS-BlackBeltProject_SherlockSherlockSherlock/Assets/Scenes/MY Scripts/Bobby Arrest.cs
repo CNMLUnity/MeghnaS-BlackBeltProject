@@ -7,9 +7,11 @@ public class BobbyArrest : MonoBehaviour
 {
     public Arrest arrest;
     public bool hasHandcuffs;
+    public int currentScene;
     // Start is called before the first frame update
     void Start()
     {
+        currentScene = SceneManager.GetActiveScene().buildIndex;
         hasHandcuffs = false;
     }
 
@@ -32,7 +34,7 @@ public class BobbyArrest : MonoBehaviour
             Debug.LogWarning(hasHandcuffs);
             //Debug.LogWarning("Player has collided with handcuffs");
             Debug.LogError("Player has entered trigger");
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(currentScene + 1);
         }
     }
     /*
