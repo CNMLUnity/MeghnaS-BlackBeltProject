@@ -9,7 +9,8 @@ public class Deactivate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //AlsoCanvas.SetActive(false);
+        Canvas.SetActive(true);
+        AlsoCanvas.SetActive(false);
     }
 
     // Update is called once per frame

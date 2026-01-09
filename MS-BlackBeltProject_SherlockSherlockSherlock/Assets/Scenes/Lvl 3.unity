@@ -271,6 +271,7 @@ GameObject:
   - component: {fileID: 33099271}
   - component: {fileID: 33099273}
   - component: {fileID: 33099272}
+  - component: {fileID: 33099274}
   m_Layer: 0
   m_Name: Cave_Pillar_B (2)
   m_TagString: Untagged
@@ -343,6 +344,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33099270}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &33099274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33099270}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &38158543
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +376,7 @@ GameObject:
   - component: {fileID: 38158544}
   - component: {fileID: 38158546}
   - component: {fileID: 38158545}
+  - component: {fileID: 38158547}
   m_Layer: 0
   m_Name: Cave_Pillar_B (1)
   m_TagString: Untagged
@@ -426,6 +449,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38158543}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &38158547
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38158543}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00021541116}
 --- !u!1 &47371199
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +481,7 @@ GameObject:
   - component: {fileID: 47371200}
   - component: {fileID: 47371202}
   - component: {fileID: 47371201}
+  - component: {fileID: 47371203}
   m_Layer: 0
   m_Name: Cave_Pillar_B (9)
   m_TagString: Untagged
@@ -509,6 +554,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47371199}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &47371203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47371199}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015608219, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &49567396 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3636964506183465101, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -676,6 +742,7 @@ GameObject:
   - component: {fileID: 100692730}
   - component: {fileID: 100692732}
   - component: {fileID: 100692731}
+  - component: {fileID: 100692733}
   m_Layer: 0
   m_Name: Cave_Pillar_B (7)
   m_TagString: Untagged
@@ -748,6 +815,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100692729}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &100692733
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100692729}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00021541116}
 --- !u!1 &101788544 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -741456600708683483, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -1403,6 +1491,67 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.35029218, y: 0.35029218, z: 0.35029408}
   m_Center: {x: 16.79904, y: 10.313114, z: 10.748203}
+--- !u!1001 &203718912
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7196883528833783940, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1262455786}
+    - target: {fileID: 8257025407772752685, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_Name
+      value: Final Sherlock 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 497.8447
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 285.0301
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 693.4215
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42746659b80501546b44055526e46e56, type: 3}
 --- !u!1 &204665949 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 971831823738452364, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -1440,6 +1589,7 @@ GameObject:
   - component: {fileID: 210695449}
   - component: {fileID: 210695451}
   - component: {fileID: 210695450}
+  - component: {fileID: 210695452}
   m_Layer: 0
   m_Name: Cave_Pillar_B (1)
   m_TagString: Untagged
@@ -1512,6 +1662,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210695448}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &210695452
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210695448}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015608219, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &213505878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3759631923621926067, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -2246,17 +2417,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.010675191, y: 0.104293816, z: 0.10777759}
   m_Center: {x: -0.65870804, y: 0.16198967, z: 12.795926}
---- !u!114 &284484865 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9194490803510493377, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-  m_PrefabInstance: {fileID: 514437059}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9462c9d4540f9b4d86a01016526927b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &284990967 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 029adcaf014a0fe4d8de32d0d580a09c, type: 3}
@@ -3991,6 +4151,7 @@ GameObject:
   - component: {fileID: 435831764}
   - component: {fileID: 435831766}
   - component: {fileID: 435831765}
+  - component: {fileID: 435831767}
   m_Layer: 0
   m_Name: Cave_Pillar_B (7)
   m_TagString: Untagged
@@ -4063,6 +4224,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435831763}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &435831767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435831763}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015577707, y: -0.34779927, z: 0.00024592885}
 --- !u!1 &437169669
 GameObject:
   m_ObjectHideFlags: 0
@@ -4711,6 +4893,7 @@ GameObject:
   - component: {fileID: 493017040}
   - component: {fileID: 493017042}
   - component: {fileID: 493017041}
+  - component: {fileID: 493017043}
   m_Layer: 0
   m_Name: Cave_Pillar_B (10)
   m_TagString: Untagged
@@ -4783,6 +4966,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493017039}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &493017043
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493017039}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.01560059, y: -0.347784, z: 0.00024592874}
 --- !u!1 &494935733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6978371218291299525, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -4872,6 +5076,7 @@ GameObject:
   - component: {fileID: 503523559}
   - component: {fileID: 503523561}
   - component: {fileID: 503523560}
+  - component: {fileID: 503523562}
   m_Layer: 0
   m_Name: Cave_Pillar_B (6)
   m_TagString: Untagged
@@ -4944,99 +5149,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503523558}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &503523562
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503523558}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015577707, y: -0.34779927, z: 0.00027644643}
 --- !u!4 &509422184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
   m_PrefabInstance: {fileID: 1236366828}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &514437059
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3335876761479064782, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.07226611
-      objectReference: {fileID: 0}
-    - target: {fileID: 3335876761479064782, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.1296692
-      objectReference: {fileID: 0}
-    - target: {fileID: 3335876761479064782, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -4.0742803
-      objectReference: {fileID: 0}
-    - target: {fileID: 8051983665946008987, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: floor
-      value: 
-      objectReference: {fileID: 1262455786}
-    - target: {fileID: 8231216026858436289, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.07226611
-      objectReference: {fileID: 0}
-    - target: {fileID: 8231216026858436289, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.1296692
-      objectReference: {fileID: 0}
-    - target: {fileID: 8231216026858436289, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -4.0742803
-      objectReference: {fileID: 0}
-    - target: {fileID: 8575878182372642951, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 508.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8575878182372642951, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 285.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8575878182372642951, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 695.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8575878182372642951, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8575878182372642951, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8575878182372642951, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8575878182372642951, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8575878182372642951, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8575878182372642951, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8575878182372642951, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9135775971278962226, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      propertyPath: m_Name
-      value: Final Sherlock
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6145999106423932719, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1085542154}
-  m_SourcePrefab: {fileID: 100100000, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
 --- !u!1 &514783203 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 694638299681453583, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -5646,6 +5784,7 @@ GameObject:
   - component: {fileID: 573453661}
   - component: {fileID: 573453663}
   - component: {fileID: 573453662}
+  - component: {fileID: 573453664}
   m_Layer: 0
   m_Name: Cave_Pillar_B (9)
   m_TagString: Untagged
@@ -5718,6 +5857,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573453660}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &573453664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573453660}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015577707, y: -0.34779927, z: 0.00027644643}
 --- !u!1 &577640799 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2550237325092985355, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -8030,6 +8190,7 @@ GameObject:
   - component: {fileID: 905384369}
   - component: {fileID: 905384371}
   - component: {fileID: 905384370}
+  - component: {fileID: 905384372}
   m_Layer: 0
   m_Name: Cave_Pillar_B (5)
   m_TagString: Untagged
@@ -8102,6 +8263,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905384368}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &905384372
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905384368}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &906878178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1675788783413188524, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -10104,41 +10286,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.07802581, y: 0.078026764, z: 3.2839696}
   m_Center: {x: 17.011005, y: 10.309955, z: 9.998204}
---- !u!1 &1085542151 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6145999106423932719, guid: 4bdc2dd79e3433f4fac7624af82d3a75, type: 3}
-  m_PrefabInstance: {fileID: 514437059}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1085542154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085542151}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CollideAgainst:
-    serializedVersion: 2
-    m_Bits: 17
-  m_IgnoreTag: 
-  m_TransparentLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_MinimumDistanceFromTarget: 0.1
-  m_AvoidObstacles: 1
-  m_DistanceLimit: 0
-  m_MinimumOcclusionTime: 0
-  m_CameraRadius: 0.99
-  m_Strategy: 2
-  m_MaximumEffort: 4
-  m_SmoothingTime: 0
-  m_Damping: 0
-  m_DampingWhenOccluded: 0
-  m_OptimalTargetDistance: 0
 --- !u!1 &1088567205 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2517932420259350217, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -10662,6 +10809,7 @@ GameObject:
   - component: {fileID: 1129646903}
   - component: {fileID: 1129646905}
   - component: {fileID: 1129646904}
+  - component: {fileID: 1129646906}
   m_Layer: 0
   m_Name: Cave_Pillar_B (4)
   m_TagString: Untagged
@@ -10734,6 +10882,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129646902}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1129646906
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129646902}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015669255, y: -0.34779927, z: 0.00021541116}
 --- !u!1 &1132742733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5458697393259601065, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -10824,7 +10993,7 @@ GameObject:
   - component: {fileID: 1132953388}
   - component: {fileID: 1132953387}
   - component: {fileID: 1132953389}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cave_Platform_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10915,8 +11084,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.080274, y: 0.18517871, z: 2.925477}
-  m_Center: {x: 0.1762174, y: 4.0200596, z: 0.19644266}
+  m_Size: {x: 3.080274, y: 0.26990035, z: 2.925477}
+  m_Center: {x: 0.1762174, y: 4.0624948, z: 0.19644266}
 --- !u!1 &1135770944 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8992641449331443356, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -11178,6 +11347,7 @@ GameObject:
   - component: {fileID: 1179069984}
   - component: {fileID: 1179069986}
   - component: {fileID: 1179069985}
+  - component: {fileID: 1179069987}
   m_Layer: 0
   m_Name: Cave_Pillar_B (3)
   m_TagString: Untagged
@@ -11250,6 +11420,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179069983}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1179069987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179069983}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &1179176765 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ccd2862dd5a60ba4a82363f0bf556f1e, type: 3}
@@ -11344,6 +11535,7 @@ GameObject:
   - component: {fileID: 1184642532}
   - component: {fileID: 1184642534}
   - component: {fileID: 1184642533}
+  - component: {fileID: 1184642535}
   m_Layer: 0
   m_Name: Cave_Pillar_B (6)
   m_TagString: Untagged
@@ -11416,6 +11608,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184642531}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1184642535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184642531}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &1186336515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6216602289831779505, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -11609,6 +11822,7 @@ GameObject:
   - component: {fileID: 1213856743}
   - component: {fileID: 1213856745}
   - component: {fileID: 1213856744}
+  - component: {fileID: 1213856746}
   m_Layer: 0
   m_Name: Cave_Pillar_B (4)
   m_TagString: Untagged
@@ -11681,6 +11895,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213856742}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1213856746
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213856742}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015577707, y: -0.34779927, z: 0.00024592885}
 --- !u!1001 &1213999583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13121,7 +13356,7 @@ GameObject:
   - component: {fileID: 1262455789}
   - component: {fileID: 1262455788}
   - component: {fileID: 1262455787}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13350,6 +13585,7 @@ GameObject:
   - component: {fileID: 1284986977}
   - component: {fileID: 1284986979}
   - component: {fileID: 1284986978}
+  - component: {fileID: 1284986980}
   m_Layer: 0
   m_Name: Cave_Pillar_B (8)
   m_TagString: Untagged
@@ -13422,6 +13658,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284986976}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1284986980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284986976}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &1292589794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8720743946164226784, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -13485,6 +13742,7 @@ GameObject:
   - component: {fileID: 1296781099}
   - component: {fileID: 1296781101}
   - component: {fileID: 1296781100}
+  - component: {fileID: 1296781102}
   m_Layer: 0
   m_Name: Cave_Pillar_B (7)
   m_TagString: Untagged
@@ -13557,6 +13815,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296781098}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1296781102
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296781098}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015608219, y: -0.34779927, z: 0.00021541116}
 --- !u!1 &1303427374
 GameObject:
   m_ObjectHideFlags: 0
@@ -13568,6 +13847,7 @@ GameObject:
   - component: {fileID: 1303427375}
   - component: {fileID: 1303427377}
   - component: {fileID: 1303427376}
+  - component: {fileID: 1303427378}
   m_Layer: 0
   m_Name: Cave_Pillar_B (3)
   m_TagString: Untagged
@@ -13640,6 +13920,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303427374}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1303427378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303427374}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015608219, y: -0.34779927, z: 0.00021541116}
 --- !u!1 &1307656464
 GameObject:
   m_ObjectHideFlags: 0
@@ -13651,6 +13952,7 @@ GameObject:
   - component: {fileID: 1307656465}
   - component: {fileID: 1307656467}
   - component: {fileID: 1307656466}
+  - component: {fileID: 1307656468}
   m_Layer: 0
   m_Name: Cave_Pillar_B (6)
   m_TagString: Untagged
@@ -13723,6 +14025,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307656464}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1307656468
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307656464}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015608219, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &1318300092 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2383976923263425720, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -14636,6 +14959,7 @@ GameObject:
   - component: {fileID: 1380407717}
   - component: {fileID: 1380407719}
   - component: {fileID: 1380407718}
+  - component: {fileID: 1380407720}
   m_Layer: 0
   m_Name: Cave_Pillar_B (5)
   m_TagString: Untagged
@@ -14708,6 +15032,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380407716}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1380407720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380407716}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &1385264793 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4185106235234082573, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -15352,6 +15697,7 @@ GameObject:
   - component: {fileID: 1456333343}
   - component: {fileID: 1456333345}
   - component: {fileID: 1456333344}
+  - component: {fileID: 1456333346}
   m_Layer: 0
   m_Name: Cave_Pillar_B (11)
   m_TagString: Untagged
@@ -15424,6 +15770,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456333342}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1456333346
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456333342}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.01560059, y: -0.347784, z: 0.00024592874}
 --- !u!1001 &1459191967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15843,6 +16210,7 @@ GameObject:
   - component: {fileID: 1519750986}
   - component: {fileID: 1519750988}
   - component: {fileID: 1519750987}
+  - component: {fileID: 1519750989}
   m_Layer: 0
   m_Name: Cave_Pillar_B (4)
   m_TagString: Untagged
@@ -15915,6 +16283,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519750985}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1519750989
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519750985}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00021541116}
 --- !u!1 &1539734708 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5044437662307484357, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -16579,6 +16968,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.5095153, y: 7.177219, z: 0.20000075}
   m_Center: {x: -14.297014, y: 3.5908082, z: -6.001799}
+--- !u!114 &1608793711 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 220095940443503224, guid: 42746659b80501546b44055526e46e56, type: 3}
+  m_PrefabInstance: {fileID: 203718912}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9462c9d4540f9b4d86a01016526927b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1617129980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1454244735158502896, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -16923,9 +17323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7285fa048d46e940b0853018715a512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrest: {fileID: 284484865}
+  arrest: {fileID: 1608793711}
   hasHandcuffs: 0
-  currentScene: 0
+  currentScene: 3
 --- !u!1 &1654454926 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1044881955504375218, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -17709,6 +18109,7 @@ GameObject:
   - component: {fileID: 1734955781}
   - component: {fileID: 1734955783}
   - component: {fileID: 1734955782}
+  - component: {fileID: 1734955784}
   m_Layer: 0
   m_Name: Cave_Pillar_B
   m_TagString: Untagged
@@ -17781,6 +18182,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734955780}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1734955784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734955780}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00021541116}
 --- !u!1 &1745095734 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8384674744400630594, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -17818,6 +18240,7 @@ GameObject:
   - component: {fileID: 1756395532}
   - component: {fileID: 1756395534}
   - component: {fileID: 1756395533}
+  - component: {fileID: 1756395535}
   m_Layer: 0
   m_Name: Cave_Pillar_B (1)
   m_TagString: Untagged
@@ -17890,6 +18313,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756395531}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1756395535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756395531}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015608225, y: -0.34779927, z: 0.00027644643}
 --- !u!1 &1760838761 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3260897352042437726, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -18005,6 +18449,7 @@ GameObject:
   - component: {fileID: 1766097625}
   - component: {fileID: 1766097627}
   - component: {fileID: 1766097626}
+  - component: {fileID: 1766097628}
   m_Layer: 0
   m_Name: Cave_Pillar_B (3)
   m_TagString: Untagged
@@ -18077,6 +18522,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766097624}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1766097628
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766097624}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015577707, y: -0.34779927, z: 0.00024592885}
 --- !u!1 &1769930277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8264074485741489861, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -18171,6 +18637,7 @@ GameObject:
   - component: {fileID: 1780792919}
   - component: {fileID: 1780792921}
   - component: {fileID: 1780792920}
+  - component: {fileID: 1780792922}
   m_Layer: 0
   m_Name: Cave_Pillar_B (2)
   m_TagString: Untagged
@@ -18243,6 +18710,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780792918}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1780792922
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780792918}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &1783104823 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4722209582274056540, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -19032,6 +19520,7 @@ GameObject:
   - component: {fileID: 1854391055}
   - component: {fileID: 1854391057}
   - component: {fileID: 1854391056}
+  - component: {fileID: 1854391058}
   m_Layer: 0
   m_Name: Cave_Pillar_B (2)
   m_TagString: Untagged
@@ -19104,6 +19593,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854391054}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1854391058
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854391054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015577707, y: -0.34779927, z: 0.00027644643}
 --- !u!1001 &1859880930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19241,6 +19751,7 @@ GameObject:
   - component: {fileID: 1873881137}
   - component: {fileID: 1873881139}
   - component: {fileID: 1873881138}
+  - component: {fileID: 1873881140}
   m_Layer: 0
   m_Name: Cave_Pillar_B (10)
   m_TagString: Untagged
@@ -19313,6 +19824,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873881136}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1873881140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873881136}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015577707, y: -0.34779927, z: 0.00024592885}
 --- !u!1 &1873972974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -399118908655737351, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -19706,6 +20238,7 @@ GameObject:
   - component: {fileID: 1927351717}
   - component: {fileID: 1927351719}
   - component: {fileID: 1927351718}
+  - component: {fileID: 1927351720}
   m_Layer: 0
   m_Name: Cave_Pillar_B (8)
   m_TagString: Untagged
@@ -19778,6 +20311,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927351716}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1927351720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927351716}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015577707, y: -0.34779927, z: 0.00024592885}
 --- !u!1001 &1928555421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20156,6 +20710,7 @@ GameObject:
   - component: {fileID: 1957662388}
   - component: {fileID: 1957662390}
   - component: {fileID: 1957662389}
+  - component: {fileID: 1957662391}
   m_Layer: 0
   m_Name: Cave_Pillar_B (8)
   m_TagString: Untagged
@@ -20228,6 +20783,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957662387}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1957662391
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957662387}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00024592874}
 --- !u!1 &1960802313
 GameObject:
   m_ObjectHideFlags: 0
@@ -20239,6 +20815,7 @@ GameObject:
   - component: {fileID: 1960802314}
   - component: {fileID: 1960802316}
   - component: {fileID: 1960802315}
+  - component: {fileID: 1960802317}
   m_Layer: 0
   m_Name: Cave_Pillar_B
   m_TagString: Untagged
@@ -20311,6 +20888,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960802313}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &1960802317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960802313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098986, y: 5.4515734, z: 1.3849313}
+  m_Center: {x: 0.015638737, y: -0.34779927, z: 0.00021541116}
 --- !u!1 &1961394486 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3186995699472715536, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -21104,6 +21702,7 @@ GameObject:
   - component: {fileID: 2047842259}
   - component: {fileID: 2047842261}
   - component: {fileID: 2047842260}
+  - component: {fileID: 2047842262}
   m_Layer: 0
   m_Name: Cave_Pillar_B (5)
   m_TagString: Untagged
@@ -21176,6 +21775,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047842258}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &2047842262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047842258}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015577707, y: -0.34779927, z: 0.00027644643}
 --- !u!1 &2048011224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1062100546890748737, guid: 3a32774f29678f2428000dfe95123fd0, type: 3}
@@ -21713,6 +22333,7 @@ GameObject:
   - component: {fileID: 2146175093}
   - component: {fileID: 2146175095}
   - component: {fileID: 2146175094}
+  - component: {fileID: 2146175096}
   m_Layer: 0
   m_Name: Cave_Pillar_B
   m_TagString: Untagged
@@ -21785,6 +22406,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146175092}
   m_Mesh: {fileID: -7702047723751653117, guid: a5245c24a77253e44ae71aac7d41138c, type: 3}
+--- !u!65 &2146175096
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146175092}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6098992, y: 5.4515734, z: 1.3849318}
+  m_Center: {x: 0.015577707, y: -0.34779927, z: 0.00024592885}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -21803,5 +22445,5 @@ SceneRoots:
   - {fileID: 820615643}
   - {fileID: 980783426}
   - {fileID: 1356787595}
-  - {fileID: 514437059}
   - {fileID: 1236366828}
+  - {fileID: 203718912}
