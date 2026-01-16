@@ -12,6 +12,7 @@ public class TargetStuff : MonoBehaviour
     public GameObject Circle;
     public  Timer timer;
     // Start is called before the first frame update
+    public int currentScene;
     void Start()
     {
         targets[targetIndex].SetActive(true);
@@ -34,7 +35,7 @@ public class TargetStuff : MonoBehaviour
                 //Debug.Log("next target"); 
                 if(targetIndex >= targets.Length && timer.timeLeft >= 0) 
                 {
-                    SceneManager.LoadScene(7);
+                    SceneManager.LoadScene(currentScene + 1);
                 }
                 targets[targetIndex].SetActive(true);
             }
@@ -42,7 +43,7 @@ public class TargetStuff : MonoBehaviour
         }
             if(timer.BoutonClicked && timer.timeLeft < 0)
             {
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(9);
                 Invoke("ReloadScene", 5);
             }
     }
