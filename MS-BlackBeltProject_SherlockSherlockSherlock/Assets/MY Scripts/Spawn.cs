@@ -23,7 +23,7 @@ public class Spawn : MonoBehaviour
     {
         number = Time.time;
         TimeText.text = number.ToString("0.00");
-        if (Time.time >= 30)
+        if (Time.time >= 16)
         {
             FirstGuard.SetActive (true);
             SecondGuard.SetActive (true);
