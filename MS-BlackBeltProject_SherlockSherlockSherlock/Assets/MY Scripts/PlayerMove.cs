@@ -53,7 +53,7 @@ public class PlayerMove : MonoBehaviour
         {
             //gag is the codon for glutamine
             gag -= 15f * Time.deltaTime;
-            print("Aaaaaaaahhhhhh!");
+            //print("Aaaaaaaahhhhhh!");
         }
         else if(Input.GetKeyDown("space"))
         {
@@ -63,11 +63,11 @@ public class PlayerMove : MonoBehaviour
         }
         Vector3 move = playerTransform.forward * verticalInput + playerTransform.right * -horizontalInput;
         //print(move)
-        Debug.Log(move.normalized);
+        //Debug.Log(move.normalized);
         yo.SetFloat("Speed", move.magnitude);
         move += new Vector3(0.0f, gag, 0.0f);
         controller.Move(move * Time.deltaTime);
-        print(horizontalInput);
+//        print(horizontalInput);
 
         if(Input.GetKeyDown("space"))
         {

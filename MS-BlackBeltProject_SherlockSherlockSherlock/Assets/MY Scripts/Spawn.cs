@@ -11,6 +11,8 @@ public class Spawn : MonoBehaviour
     public float number;
     public GameObject FirstGuard;
     public GameObject SecondGuard;
+
+    public bool started = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,18 +23,30 @@ public class Spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        number = Time.time;
-        TimeText.text = number.ToString("0.00");
-        if (Time.time >= 16)
+        if (started)
         {
-            FirstGuard.SetActive (true);
-            SecondGuard.SetActive (true);
-            Invoke ("Stop", 1000);
+            if (Time.time >= 16)
+            {
+                FirstGuard.SetActive (true);
+                SecondGuard.SetActive (true);
+                //Invoke ("Stop", 1000);
+            } else
+            {
+                number = Time.time;
+                TimeText.text = number.ToString("0.00");
+            }
         }
     }
-    void Stop()
+    public void ToggleStarted()
     {
-        this.enabled = false;
+        if (!started)
+        {
+            started = true;
+        }
+        else
+        {
+            started = false;
+        }
     }
 }
 

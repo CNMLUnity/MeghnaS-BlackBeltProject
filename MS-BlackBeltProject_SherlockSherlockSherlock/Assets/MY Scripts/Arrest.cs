@@ -15,7 +15,7 @@ public class Arrest : MonoBehaviour
     {
         //handcuffs.transform.SetParent(Player);
         handcuffs.SetActive(false);
-        Debug.Log(handcuffs.activeInHierarchy);
+        //Debug.Log(handcuffs.activeInHierarchy);
         //Debug.Log("The player's position is" + Player.transform.position + "The handcuffs position is" +  handcuffs.transform.position);
     }
 
