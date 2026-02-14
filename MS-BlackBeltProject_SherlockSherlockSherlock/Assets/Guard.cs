@@ -23,7 +23,6 @@ public class Guard : MonoBehaviour
         if (spawn.number >= 16)
         {
             agent.SetDestination (Player.transform.position);
-            
         }
     }
     void OnTriggerEnter(Collider other)
