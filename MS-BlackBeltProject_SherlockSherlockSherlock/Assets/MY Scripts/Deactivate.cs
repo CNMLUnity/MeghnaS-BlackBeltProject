@@ -6,10 +6,12 @@ public class Deactivate : MonoBehaviour
 {
     public GameObject Canvas;
     public GameObject AlsoCanvas;
+    public GameObject SceneCube;
     // Start is called before the first frame update
     void Start()
     {
         Canvas.SetActive(true);
+        SceneCube.SetActive(true);
         AlsoCanvas.SetActive(false);
     }
 
@@ -21,6 +23,7 @@ public class Deactivate : MonoBehaviour
     public void ByeByeCanvas()
     {
         Canvas.SetActive(false);
+        SceneCube.SetActive(false);
         AlsoCanvas.SetActive(true);
     }
 }
