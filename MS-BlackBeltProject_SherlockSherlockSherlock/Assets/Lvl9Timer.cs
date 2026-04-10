@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEditor.Rendering;
+using UnityEngine.SceneManagement;
 
-public class Spawn : MonoBehaviour
+public class Lvl9Timer : MonoBehaviour
 {
     public TMP_Text Timer;
     public TMP_Text TimeText;
     public float number;
-    public GameObject FirstGuard;
-    public GameObject SecondGuard;
-
     public bool started = false;
+    public int currentScene;
     // Start is called before the first frame update
     void Start()
     {
-        FirstGuard.SetActive (false);
-        SecondGuard.SetActive (false);
+
     }
 
     // Update is called once per frame
@@ -25,11 +23,9 @@ public class Spawn : MonoBehaviour
     {
         if (started)
         {
-            if (Time.time >= 16)
+            if (Time.time >= 30)
             {
-                FirstGuard.SetActive (true);
-                SecondGuard.SetActive (true);
-                //Invoke ("Stop", 1000);
+                SceneManager.LoadScene (currentScene + 1);
             } else
             {
                 number = Time.time;
@@ -49,4 +45,5 @@ public class Spawn : MonoBehaviour
         }
     }
 }
+
 
