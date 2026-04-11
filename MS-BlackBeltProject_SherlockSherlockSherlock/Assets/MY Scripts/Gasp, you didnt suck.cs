@@ -18,6 +18,6 @@ public class Gaspyoudidntsuck : MonoBehaviour
     }
     public void ButtonNotCicked()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(19);
     }
 }
