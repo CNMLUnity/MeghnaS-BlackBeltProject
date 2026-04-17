@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Gaspyoudidntsuck : MonoBehaviour
+public class PLUSONE : MonoBehaviour
 {
+    public float currentScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +15,10 @@ public class Gaspyoudidntsuck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    public void ButtonNotCicked()
+    void ClickButton ()
     {
-        SceneManager.LoadScene(19);
+        SceneManager.LoadScene("currentScene" + 1);
     }
 }
