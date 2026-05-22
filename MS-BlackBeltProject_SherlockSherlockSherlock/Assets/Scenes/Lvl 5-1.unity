@@ -638,6 +638,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 65923e5440704f2438ecd9e94754d2c2, type: 3}
+      propertyPath: m_Name
+      value: Bobby
+      objectReference: {fileID: 0}
     - target: {fileID: -447275898630060098, guid: 65923e5440704f2438ecd9e94754d2c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.38
@@ -669,6 +673,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1652652154}
   m_SourcePrefab: {fileID: 100100000, guid: 65923e5440704f2438ecd9e94754d2c2, type: 3}
+--- !u!1 &126184019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4086248337574186297, guid: 42746659b80501546b44055526e46e56, type: 3}
+  m_PrefabInstance: {fileID: 1059813122}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &148021861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,12 +1287,60 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 220095940443503224, guid: 42746659b80501546b44055526e46e56, type: 3}
   m_PrefabInstance: {fileID: 1059813122}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 126184019}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9462c9d4540f9b4d86a01016526927b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &398963500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126184019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af071ebbc899874b87256ecc3e548e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: 6
+  ForgetfulBlock: {fileID: 567657779}
+  ForgetfulText: {fileID: 1701641346}
+  MurderBlock: {fileID: 2065287305}
+  MurderText: {fileID: 1951925301}
+  SpitefulBlock: {fileID: 1161611095}
+  SpitefulText: {fileID: 1997945002}
+  BobbyBlock: {fileID: 442766037}
+  BobbyText: {fileID: 1024228392}
+--- !u!54 &398963505
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126184019}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &442766037 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6972403430118580280, guid: d34ff8cfe039853489a548cfc0e82a72, type: 3}
@@ -1916,7 +1973,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3161,7 +3218,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4086248337574186297, guid: 42746659b80501546b44055526e46e56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 398963500}
+    - targetCorrespondingSourceObject: {fileID: 4086248337574186297, guid: 42746659b80501546b44055526e46e56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 398963505}
   m_SourcePrefab: {fileID: 100100000, guid: 42746659b80501546b44055526e46e56, type: 3}
 --- !u!1 &1090125918
 GameObject:
@@ -3742,8 +3805,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.678904, y: 9.315148, z: 4.93237}
-  m_Center: {x: 1.3394529, y: 0.5609611, z: 0.07567317}
+  m_Size: {x: 4.678904, y: 9.315148, z: 2.7058284}
+  m_Center: {x: 1.3394529, y: 0.56096077, z: -1.037597}
 --- !u!1 &1138484177 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1599826595754709761, guid: d34ff8cfe039853489a548cfc0e82a72, type: 3}
@@ -5364,7 +5427,6 @@ GameObject:
   - component: {fileID: 1863897352}
   - component: {fileID: 1863897351}
   - component: {fileID: 1863897350}
-  - component: {fileID: 1863897354}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -5461,26 +5523,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1863897354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863897349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6af071ebbc899874b87256ecc3e548e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForgetfulBlock: {fileID: 567657779}
-  ForgetfulText: {fileID: 1701641346}
-  MurderBlock: {fileID: 2065287305}
-  MurderText: {fileID: 1951925301}
-  SpitefulBlock: {fileID: 1161611095}
-  SpitefulText: {fileID: 1997945002}
-  BobbyBlock: {fileID: 1024228392}
-  BobbyText: {fileID: 442766037}
 --- !u!1 &1872470676
 GameObject:
   m_ObjectHideFlags: 0
@@ -5876,7 +5918,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6550,7 +6592,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
