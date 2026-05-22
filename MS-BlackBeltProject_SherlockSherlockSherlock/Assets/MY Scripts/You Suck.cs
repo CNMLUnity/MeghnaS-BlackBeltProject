@@ -5,6 +5,7 @@ using UnityEngine. SceneManagement;
 
 public class YouSuck : MonoBehaviour
 {
+    public int currentScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,13 @@ public class YouSuck : MonoBehaviour
     // Update is called once per frame
     public void ButtonCicked()
     {
-        SceneManager.LoadScene (20);
+        SceneManager.LoadScene (21);
+        StartCoroutine(WaitRoutine());
+    }
+    IEnumerator WaitRoutine()
+    {
+        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene (currentScene);
     }
 
 }

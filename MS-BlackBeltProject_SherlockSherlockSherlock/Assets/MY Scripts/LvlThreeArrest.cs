@@ -38,6 +38,14 @@ public class LvlThreeArrest : MonoBehaviour
             Debug.LogError("Player has entered trigger");
             SceneManager.LoadScene(currentScene + 1);
         }
+        else if (other.gameObject.tag == "Player" && hasHandcuffs == true && ThreeTimer.elapsedTime <= 0)
+        {
+            SceneManager.LoadScene(21);
+        }
+        else if(other.gameObject.tag == "Player" && hasHandcuffs == false && ThreeTimer.elapsedTime <= 0)
+        {
+            SceneManager.LoadScene(21);
+        }
     }
     /*
         Notes from dunedin 
