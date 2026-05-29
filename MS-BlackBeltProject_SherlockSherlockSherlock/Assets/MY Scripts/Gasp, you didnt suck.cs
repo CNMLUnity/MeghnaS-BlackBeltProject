@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Gaspyoudidntsuck : MonoBehaviour
 {
+    public int currentScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,6 @@ public class Gaspyoudidntsuck : MonoBehaviour
     }
     public void ButtonNotCicked()
     {
-        SceneManager.LoadScene(19);
+        SceneManager.LoadScene(currentScene + 1);
     }
 }
