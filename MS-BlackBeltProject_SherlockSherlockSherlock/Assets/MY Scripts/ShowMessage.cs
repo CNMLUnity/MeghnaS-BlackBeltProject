@@ -12,6 +12,7 @@ public class ShowMessage : MonoBehaviour
     public GameObject SpitefulText;
     public GameObject BobbyBlock;
     public GameObject BobbyText;
+    public Arrest arrest;
 
     void Start ()
     {
@@ -30,28 +31,32 @@ public class ShowMessage : MonoBehaviour
         {
             MurderBlock.SetActive(true);
             MurderText.SetActive(true);
+            Debug.LogWarning(MurderBlock, MurderText);
         }
         if(other.gameObject.name == "Forgetful" && Input.GetKeyDown(KeyCode.P))
         {
             ForgetfulBlock.SetActive(true);
             ForgetfulText.SetActive(true);
+            Debug.LogWarning(ForgetfulBlock, ForgetfulText);
         }
         if(other.gameObject.name == "Spiteful" && Input.GetKeyDown(KeyCode.P))
         {
             SpitefulBlock.SetActive(true);
             SpitefulText.SetActive(true);
+            Debug.LogWarning(SpitefulBlock, SpitefulText);
         }
         if(other.gameObject.name == "Bobby" && Input.GetKeyDown(KeyCode.P))
         {
-             BobbyBlock.SetActive(true);
+            BobbyBlock.SetActive(true);
             BobbyText.SetActive(true);
+            Debug.LogWarning(BobbyBlock, BobbyText);
         }
     }
     void OnTriggerEnter (Collider other)
     {
         Show(other);
         print(other.gameObject.name);
-        if(other.gameObject.name == "Murderess" && Input.GetKeyDown(KeyCode.F))
+        if(other.gameObject.name == "Murderess" && arrest.handcuffs.activeSelf == true)
         {
             SceneManager.LoadScene(currentScene + 1);
         }
