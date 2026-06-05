@@ -10,6 +10,7 @@ public class LvlThreeArrest : MonoBehaviour
     public int currentScene;
     // Start is called before the first frame update
     public LvlThreeTimer ThreeTimer;
+    public GameOver GameOver;
     void Start()
     {
         currentScene = SceneManager.GetActiveScene().buildIndex;
@@ -40,10 +41,7 @@ public class LvlThreeArrest : MonoBehaviour
         }
         else if (other.gameObject.tag == "Player" && hasHandcuffs == true && ThreeTimer.elapsedTime <= 0)
         {
-            SceneManager.LoadScene(21);
-        }
-        else if(other.gameObject.tag == "Player" && hasHandcuffs == false && ThreeTimer.elapsedTime <= 0)
-        {
+            GameOver.LastLevel = 3;
             SceneManager.LoadScene(21);
         }
     }

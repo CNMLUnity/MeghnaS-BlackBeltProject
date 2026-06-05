@@ -35,7 +35,7 @@ public class LvlThreeTimer : MonoBehaviour
 
         if(elapsedTime >= 25)
         {
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene(21);
         }
     
     }
