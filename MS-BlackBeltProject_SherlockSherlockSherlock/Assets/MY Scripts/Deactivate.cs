@@ -18,7 +18,7 @@ public class Deactivate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        SceneCube.SetActive(true);
     }
     public void ByeByeCanvas()
     {

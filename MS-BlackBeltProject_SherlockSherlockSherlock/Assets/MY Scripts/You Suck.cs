@@ -15,7 +15,7 @@ public class YouSuck : MonoBehaviour
     // Update is called once per frame
     public void ButtonCicked()
     {
-        SceneManager.LoadScene (21);
+        SceneManager.LoadScene (12);
         StartCoroutine(WaitRoutine());
     }
     IEnumerator WaitRoutine()
