@@ -29,7 +29,7 @@ public class LvlXarrest : MonoBehaviour
         }
         if (other.gameObject.name == "GuiltyBlock" && telephoneTouched)
         {
-            SceneManager.LoadScene (21);
+            SceneManager.LoadScene (12);
         }
         if (other.gameObject.name == "InnocentBlock" && telephoneTouched)
         {

@@ -1584,7 +1584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7285fa048d46e940b0853018715a512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrest: {fileID: 0}
+  arrest: {fileID: 1997846644}
   hasHandcuffs: 0
   currentScene: 1
 --- !u!65 &907299843

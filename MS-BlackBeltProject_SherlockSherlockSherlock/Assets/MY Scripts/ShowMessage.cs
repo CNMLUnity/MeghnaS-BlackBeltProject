@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,8 +26,9 @@ public class ShowMessage : MonoBehaviour
         BobbyBlock.SetActive(false);
         BobbyText.SetActive(false);
     }
-    void Show(Collider other)
+    void OnTriggerEnter(Collider other)
     {
+        print(other.gameObject.name);
         if(other.gameObject.name == "Murderess" && Input.GetKeyDown(KeyCode.P))
         {
             MurderBlock.SetActive(true);
@@ -41,6 +43,7 @@ public class ShowMessage : MonoBehaviour
         }
         if(other.gameObject.name == "Spiteful" && Input.GetKeyDown(KeyCode.P))
         {
+            print("hi");
             SpitefulBlock.SetActive(true);
             SpitefulText.SetActive(true);
             Debug.LogWarning(SpitefulBlock, SpitefulText);
@@ -51,14 +54,13 @@ public class ShowMessage : MonoBehaviour
             BobbyText.SetActive(true);
             Debug.LogWarning(BobbyBlock, BobbyText);
         }
-    }
-    void OnTriggerEnter (Collider other)
-    {
-        Show(other);
-        print(other.gameObject.name);
-        if(other.gameObject.name == "Murderess" && arrest.handcuffs.activeSelf == true)
+        if(other.gameObject.name == "Murderess" && arrest.handcuffs.activeInHierarchy == true)
         {
             SceneManager.LoadScene(currentScene + 1);
+        }
+        if(other.gameObject.name != "Murderess" && arrest.handcuffs.activeInHierarchy == true)
+        {
+            SceneManager.LoadScene(12);
         }
     }
 }

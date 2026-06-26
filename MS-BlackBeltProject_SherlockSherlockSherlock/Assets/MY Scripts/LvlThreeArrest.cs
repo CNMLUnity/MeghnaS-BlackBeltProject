@@ -40,7 +40,7 @@ public class LvlThreeArrest : MonoBehaviour
         }
         else if (other.gameObject.tag == "Player" && hasHandcuffs == true && ThreeTimer.elapsedTime <= 0)
         {
-            SceneManager.LoadScene(21);
+            SceneManager.LoadScene(12);
         }
     }
     /*

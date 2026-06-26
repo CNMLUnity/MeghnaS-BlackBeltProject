@@ -9,6 +9,7 @@ public class Lvl8Deactivate : MonoBehaviour
     public GameObject Player;
     public GameObject Timer;
     public GameObject Time;
+    public GameObject TimeKeeper;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class Lvl8Deactivate : MonoBehaviour
         Player.SetActive(false);
         Timer.SetActive(false);
         Time.SetActive (false);
+        TimeKeeper.SetActive(false);
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class Lvl8Deactivate : MonoBehaviour
         Player.SetActive(true);
         Timer.SetActive(true);
         Time.SetActive (true);
+        TimeKeeper.SetActive(true);
     }
 }
 

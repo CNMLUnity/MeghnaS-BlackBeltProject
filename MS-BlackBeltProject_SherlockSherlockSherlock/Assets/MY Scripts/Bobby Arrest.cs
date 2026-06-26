@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,22 +19,23 @@ public class BobbyArrest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(arrest.handcuffs.activeSelf == true)
+        if(arrest.handcuffs.activeInHierarchy == true)
         {
             hasHandcuffs = true;
-            Debug.Log(hasHandcuffs);
+            print(hasHandcuffs);
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.LogWarning(other.gameObject.tag);
-        Debug.LogWarning(hasHandcuffs);
+        print(other.gameObject.tag);
+        print(hasHandcuffs);
         if(other.gameObject.tag == "Player" && hasHandcuffs == true)
         {
-            Debug.LogWarning(hasHandcuffs);
-            //Debug.LogWarning("Player has collided with handcuffs");
-            Debug.LogError("Player has entered trigger");
+            print("Life is plagued with injustices");
+            print(hasHandcuffs);
+            //print("Player has collided with handcuffs");
+            //print("Player has entered trigger");
             SceneManager.LoadScene(currentScene + 1);
         }
     }

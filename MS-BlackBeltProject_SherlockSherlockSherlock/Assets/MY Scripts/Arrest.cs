@@ -25,7 +25,7 @@ public class Arrest : MonoBehaviour
         {
             Debug.Log("Vai is dis scamming me");
             handcuffs.SetActive(true);
-            Debug.Log(handcuffs.activeSelf);
+            Debug.LogWarning(handcuffs.activeInHierarchy);
             handcuffs.transform.position = Player.transform.position;
             //handcuffs.transform.localPosition = new Vector3(0f,1.2f,0f);
         }

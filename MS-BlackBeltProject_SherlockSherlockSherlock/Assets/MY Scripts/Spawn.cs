@@ -11,6 +11,7 @@ public class Spawn : MonoBehaviour
     public float number;
     public GameObject FirstGuard;
     public GameObject SecondGuard;
+    public GameObject TimeKeeper;
 
     public bool started = false;
     // Start is called before the first frame update
@@ -23,6 +24,10 @@ public class Spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(TimeKeeper.activeInHierarchy == false)
+        {
+            started = false;
+        }
         if (started)
         {
             if (Time.time >= 16)
