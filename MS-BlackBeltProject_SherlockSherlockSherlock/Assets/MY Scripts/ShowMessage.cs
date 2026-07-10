@@ -17,14 +17,14 @@ public class ShowMessage : MonoBehaviour
 
     void Start ()
     {
-        ForgetfulBlock.SetActive(false);
-        ForgetfulText.SetActive(false);
-        MurderBlock.SetActive(false);
-        MurderText.SetActive(false);
-        SpitefulBlock.SetActive(false);
-        SpitefulText.SetActive(false);
-        BobbyBlock.SetActive(false);
-        BobbyText.SetActive(false);
+        ForgetfulBlock.SetActive(true);
+        ForgetfulText.SetActive(true);
+        MurderBlock.SetActive(true);
+        MurderText.SetActive(true);
+        SpitefulBlock.SetActive(true);
+        SpitefulText.SetActive(true);
+        BobbyBlock.SetActive(true);
+        BobbyText.SetActive(true);
     }
     void OnTriggerEnter(Collider other)
     {

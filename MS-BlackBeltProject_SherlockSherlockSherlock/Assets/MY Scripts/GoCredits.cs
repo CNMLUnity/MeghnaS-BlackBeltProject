@@ -1,8 +1,7 @@
-using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoBack : MonoBehaviour
+public class GoCredits : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,9 +14,8 @@ public class GoBack : MonoBehaviour
     {
         
     }
-    public void Back()
+    public void Credits()
     {
-        print("hi");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(13);
     }
 }
