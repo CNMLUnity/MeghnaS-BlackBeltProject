@@ -131,8 +131,8 @@ public class PlayerMove : MonoBehaviour
         if (transform.position.y < floor.transform.position.y)
         {
             yo.SetTrigger("Aaa...");
-            print("Start dying");
-            Debug.Log("Wut the Sherlock");
+            //print("Start dying");
+            //Debug.Log("Wut the Sherlock");
             controller.Move(Vector3.down * 5 * Time.deltaTime);
             speed = 0f;
             gag = 0f;
