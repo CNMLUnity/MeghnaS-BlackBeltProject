@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+
+using System.Reflection;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -20,9 +23,11 @@ public class Guard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spawn.number >= 16)
+        print(spawn.number);
+        if (spawn.number > 15.8)
         {
             agent.SetDestination (Player.transform.position);
+            Debug.Log(agent.destination);
         }
     }
     void OnTriggerEnter(Collider other)
@@ -41,7 +46,7 @@ public class Guard : MonoBehaviour
         else if(other.gameObject.tag == "Player")
         {
             Player.SetActive(false);
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene(12);
             Debug.LogWarning("Player has collided without defense and lost health.");
         }
     }

@@ -31,7 +31,7 @@ public class Spawn : MonoBehaviour
         }
         if (started)
         {
-            if (Time.time - TimeStarted >= 16)
+            if (Time.time - TimeStarted > 16)
             {
                 FirstGuard.SetActive (true);
                 SecondGuard.SetActive (true);
