@@ -14,6 +14,7 @@ public class Guard : MonoBehaviour
     public Spawn spawn;
     public float speed = 10f;
     public NavMeshAgent agent;
+    public GameObject guard;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,12 +37,14 @@ public class Guard : MonoBehaviour
         {
 
             Debug.LogWarning("Player has deactivated guard.");
+            guard.SetActive(false);
         }        
 
         else if(other.gameObject.tag == "Player" && PlayerMove.isPunching == true)
         {
 
             Debug.LogWarning("Player has deactivated guard.");
+            guard.SetActive(false);
         }
         else if(other.gameObject.tag == "Player")
         {

@@ -709,7 +709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19, y: 64}
+  m_AnchoredPosition: {x: 131, y: 64}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &836852393
@@ -876,23 +876,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You have the accounts of three witnesses. The crime was committed at 
+  m_text: "You have the accounts of three witnesses. The crime was committed at 
     4 p.m. in Noob Park. Assume that everyone is telling the truth. Who committed
-    the crime?
-
-    Suspect 1:  At 3 p.m., I was going shopping at Qwerty Mall. I
-    didn''y finish until 5 p.m. and I didn''t see anything suspicious.
-
-    Suspect
-    2: At 4 p.m., I was taking a stroll through the park.
-
-    Suspect 3: DUDE!!!!!
-    WHY DO YOU SUSPECT ME?!! I SWEAR I DIDN''T DO IT!!!!!!!!!!
-
-    Suspect 4: Fine!
-    I''ll tell you, but I expect you to exonerate me immediately as I am of (obviously)
-    royal descent. At 4 p.m., I was exiting Noob Park. I didn''t see anyone. Now
-    get out of my face!!!'
+    the crime?\nSuspect 1:  At 3 p.m., I was going shopping at Qwerty Mall. I didn't\n
+    finish until 5 p.m. and I didn't see anything suspicious.\nSuspect 2: At 4 p.m.,
+    I was taking a stroll through the park.\nSuspect 3: DUDE!!!!! WHY DO YOU SUSPECT
+    ME?!! I SWEAR I DIDN'T DO IT!!!!!!!!!!\nSuspect 4: Fine! I'll tell you, but I
+    expect you to exonerate me immediately as I am of (obviously) royal descent.
+    At 4 p.m., I was exiting Noob Park. I didn't see anyone. Now get out of my face!!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

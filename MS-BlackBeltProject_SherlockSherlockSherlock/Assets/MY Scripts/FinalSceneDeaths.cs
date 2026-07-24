@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class FinalSceneDeaths : MonoBehaviour
 {
+    public GameObject Player;
+    public GameObject Enemy;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -2540,7 +2540,6 @@ MonoBehaviour:
   spawn: {fileID: 835576069}
   speed: 10
   agent: {fileID: 1121052066}
-  guard: {fileID: 0}
 --- !u!1 &600262516
 GameObject:
   m_ObjectHideFlags: 0
@@ -3031,7 +3030,6 @@ MonoBehaviour:
   spawn: {fileID: 835576069}
   speed: 10
   agent: {fileID: 794159666}
-  guard: {fileID: 794159664}
 --- !u!65 &794159669
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3627,7 +3625,6 @@ MonoBehaviour:
   spawn: {fileID: 835576069}
   speed: 10
   agent: {fileID: 794159666}
-  guard: {fileID: 0}
 --- !u!4 &1051277007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3297057333984956320, guid: 42746659b80501546b44055526e46e56, type: 3}
@@ -3909,7 +3906,6 @@ MonoBehaviour:
   spawn: {fileID: 835576069}
   speed: 10
   agent: {fileID: 1121052066}
-  guard: {fileID: 410289087}
 --- !u!54 &1121052065
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5848,7 +5844,7 @@ MonoBehaviour:
     a bad turn and you have been imprisoned by Professor Moriarty (your arch-nemesis)''s
     crony Colonel Sebastian Moran. Look around the room and find a way to escape.
     Oh, and be sure to keep your eyes open for his guards, who emerge from the HQ
-    at 16 seconds. They will inevitably attack you and you have to fend for yourself
+    every 16 seconds. They will inevitably attack you and you have to fend for yourself
     every time. ''E'' to punch and ''Q'' to kick.
 
 '

@@ -8,11 +8,10 @@ public class BobbyArrest : MonoBehaviour
 {
     public Arrest arrest;
     public bool hasHandcuffs;
-    public int currentScene;
+    public int currentScene = 6;
     // Start is called before the first frame update
     void Start()
     {
-        currentScene = SceneManager.GetActiveScene().buildIndex;
         hasHandcuffs = false;
     }
 
@@ -29,10 +28,10 @@ public class BobbyArrest : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         print(other.gameObject.tag);
-        print(hasHandcuffs);
+        print(hasHandcuffs);    
         if(other.gameObject.tag == "Player" && hasHandcuffs == true)
         {
-            print("Life is plagued with injustices");
+            print(currentScene + 1);
             print(hasHandcuffs);
             //print("Player has collided with handcuffs");
             //print("Player has entered trigger");
