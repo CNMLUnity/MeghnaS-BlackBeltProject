@@ -633,14 +633,31 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome! To play this game, you must solve different crimes. The difficulty
+  m_text: 'Welcome! To play this game, you must solve different crimes. The difficulty
     is designed to be completely arbitrary. This is inspired by all things Sherlock
-    Holmes. \nControls:\nw - forward\ns - backward\nd - right\na - left\nspace -
-    jump\nt - enable handcuffs\n\nTo arrest the criminal, simply touch him/her with
-    handcuffs. Your level and progress does not save, as criminals come and go in
-    the world's flow.  You will be restarting from here every time you lose. It should
-    be a relatively easy game, involving timers, shooting, hand-to-hand combat, evaluating
-    testimonies, and more. Enjoy!"
+    Holmes (in fact, you ARE Sherlock Holmes).
+
+    Controls:
+
+    w - forward
+
+    s
+    - backward
+
+    d - right
+
+    a - left
+
+    space - jump
+
+    t - enable handcuffs
+
+
+    To
+    arrest the criminal, simply touch him/her with handcuffs. Your level and progress
+    does not save, as criminals come and go in the world''s flow.  You will be restarting
+    from here every time you lose. It should be a relatively easy game, involving
+    timers, shooting, hand-to-hand combat, evaluating testimonies, and more. Enjoy!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

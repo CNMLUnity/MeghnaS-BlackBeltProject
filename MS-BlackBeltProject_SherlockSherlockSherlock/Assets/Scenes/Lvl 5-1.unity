@@ -2228,7 +2228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrest: {fileID: 398963506}
   hasHandcuffs: 1
-  currentScene: 6
+  currentScene: 11
 --- !u!64 &393084218
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2251,28 +2251,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &398963503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97200519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6af071ebbc899874b87256ecc3e548e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentScene: 6
-  ForgetfulBlock: {fileID: 567657779}
-  ForgetfulText: {fileID: 1701641346}
-  MurderBlock: {fileID: 2065287305}
-  MurderText: {fileID: 1951925301}
-  SpitefulBlock: {fileID: 1161611095}
-  SpitefulText: {fileID: 1997945002}
-  BobbyBlock: {fileID: 1024228392}
-  BobbyText: {fileID: 442766037}
-  arrest: {fileID: 398963506}
 --- !u!54 &398963504
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3653,7 +3631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BobbyArrest
   arrest: {fileID: 398963506}
   hasHandcuffs: 0
-  currentScene: 0
+  currentScene: 11
 --- !u!64 &672920932
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5883,9 +5861,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4086248337574186297, guid: 42746659b80501546b44055526e46e56, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 398963503}
     - targetCorrespondingSourceObject: {fileID: 4086248337574186297, guid: 42746659b80501546b44055526e46e56, type: 3}
       insertIndex: -1
       addedObject: {fileID: 398963504}
@@ -11386,7 +11361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrest: {fileID: 398963506}
   hasHandcuffs: 0
-  currentScene: 6
+  currentScene: 11
 --- !u!64 &1123177016
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12622,21 +12597,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -7395704305543789238, guid: f3ff895ef82a5154da206a1c4e33c042, type: 3}
   m_PrefabInstance: {fileID: 1888209633}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1550396510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550396508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7285fa048d46e940b0853018715a512, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arrest: {fileID: 398963506}
-  hasHandcuffs: 0
-  currentScene: 6
 --- !u!64 &1550396516
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12659,6 +12619,42 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &1550396518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550396508}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5399626, y: 2.4349613, z: 4.2687507}
+  m_Center: {x: 0.012162659, y: 0.22909531, z: 1.8206717}
+--- !u!114 &1550396519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550396508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718359a80ce8c2b4badcc9314d0a9302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OtherArrest
+  arrest: {fileID: 398963506}
+  hasHandcuffs: 0
+  currentScene: 6
 --- !u!1 &1578249601
 GameObject:
   m_ObjectHideFlags: 0
@@ -13844,7 +13840,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.861635, y: -0.40644, z: -22}
-  m_LocalScale: {x: 22.11, y: 2.7413, z: 58.8}
+  m_LocalScale: {x: 31.999804, y: 2.7413, z: 108.68004}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -14220,10 +14216,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -7395704305543789238, guid: f3ff895ef82a5154da206a1c4e33c042, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1550396510}
+      addedObject: {fileID: 1550396516}
     - targetCorrespondingSourceObject: {fileID: -7395704305543789238, guid: f3ff895ef82a5154da206a1c4e33c042, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1550396516}
+      addedObject: {fileID: 1550396519}
+    - targetCorrespondingSourceObject: {fileID: -7395704305543789238, guid: f3ff895ef82a5154da206a1c4e33c042, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1550396518}
   m_SourcePrefab: {fileID: 100100000, guid: f3ff895ef82a5154da206a1c4e33c042, type: 3}
 --- !u!1 &1901887272
 GameObject:

@@ -31,7 +31,6 @@ public class PlayerMove : MonoBehaviour
 
     private float cameraRotX;
 
-
     void Start()
     {
         gag = 0.0f;
@@ -80,6 +79,10 @@ public class PlayerMove : MonoBehaviour
         if(transform.position.y > floor.transform.position.y)
         {
             //yo.SetBool("JUmp", true);
+        }
+        if(transform.position.y < floor.transform.position.y)
+        {
+            SceneManager.LoadScene(12);
         }
         //else if (transform.position.y = floor.transform.position.y)
         //{
@@ -144,6 +147,14 @@ public class PlayerMove : MonoBehaviour
         if(other.CompareTag("Water"))
         {
             SceneManager.LoadScene(2);
+        }
+        if(isKicking && other.CompareTag("Guard"))
+        {
+            Destroy(other);
+        }
+        if(isPunching && other.CompareTag("Guard"))
+        {
+            Destroy(other);
         }
     }
    // void Dead()

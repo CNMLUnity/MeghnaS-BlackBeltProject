@@ -435,6 +435,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &73171565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4086248337574186297, guid: 42746659b80501546b44055526e46e56, type: 3}
+  m_PrefabInstance: {fileID: 991758400}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &76395992 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: bb52ebb4e01b03846ad6460988b7b1c3, type: 3}
@@ -501,10 +506,9 @@ GameObject:
   - component: {fileID: 125470839}
   - component: {fileID: 125470838}
   - component: {fileID: 125470837}
-  - component: {fileID: 125470840}
   m_Layer: 0
   m_Name: Trap
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -602,18 +606,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125470835}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &125470840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125470835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a42cff832541da4aa0df311a01878cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &132401860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: bb52ebb4e01b03846ad6460988b7b1c3, type: 3}
@@ -706,7 +698,6 @@ GameObject:
   - component: {fileID: 154930997}
   - component: {fileID: 154930996}
   - component: {fileID: 154930995}
-  - component: {fileID: 154930994}
   m_Layer: 0
   m_Name: Trap (1)
   m_TagString: Untagged
@@ -729,18 +720,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1813636481}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &154930994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154930992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a42cff832541da4aa0df311a01878cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &154930995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3891,12 +3870,24 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8774221496823117343, guid: 42746659b80501546b44055526e46e56, type: 3}
   m_PrefabInstance: {fileID: 991758400}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 73171565}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9462c9d4540f9b4d86a01016526927b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrest
+--- !u!114 &958209514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73171565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff077beaeeb97f4a85c4ee49eba0135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YouDiedOnTrap
 --- !u!1 &971154515
 GameObject:
   m_ObjectHideFlags: 0
@@ -4098,7 +4089,7 @@ PrefabInstance:
       objectReference: {fileID: 1999741860}
     - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 116.029
+      value: 119.63
       objectReference: {fileID: 0}
     - target: {fileID: 8889455642223498648, guid: 42746659b80501546b44055526e46e56, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4155,7 +4146,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4086248337574186297, guid: 42746659b80501546b44055526e46e56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 958209514}
   m_SourcePrefab: {fileID: 100100000, guid: 42746659b80501546b44055526e46e56, type: 3}
 --- !u!1 &1017444603 stripped
 GameObject:
