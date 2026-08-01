@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Water
   - Enemy
+  - Guard
   layers:
   - Default
   - TransparentFX
