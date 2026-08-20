@@ -713,10 +713,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4086248337574186297, guid: 42746659b80501546b44055526e46e56, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1997846648}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42746659b80501546b44055526e46e56, type: 3}
 --- !u!1 &558231703
 GameObject:
@@ -3401,37 +3398,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4705766638399579286, guid: 42746659b80501546b44055526e46e56, type: 3}
   m_PrefabInstance: {fileID: 452951732}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1997846642 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4086248337574186297, guid: 42746659b80501546b44055526e46e56, type: 3}
-  m_PrefabInstance: {fileID: 452951732}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1997846644 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8774221496823117343, guid: 42746659b80501546b44055526e46e56, type: 3}
   m_PrefabInstance: {fileID: 452951732}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997846642}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9462c9d4540f9b4d86a01016526927b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrest
---- !u!114 &1997846648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997846642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7285fa048d46e940b0853018715a512, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BobbyArrest
-  arrest: {fileID: 1997846644}
-  hasHandcuffs: 0
-  currentScene: 1
 --- !u!1 &2049279333
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,7 +32,7 @@ public class TelephoneArrest : MonoBehaviour
         }
         if (other.name == "GuiltyBlock" && teleTouched == true)
         {
-            SceneManager.LoadScene (21);
+            SceneManager.LoadScene (12);
         }
     }
 }
