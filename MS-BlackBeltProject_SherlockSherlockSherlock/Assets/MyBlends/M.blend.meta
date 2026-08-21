@@ -22,7 +22,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -83,7 +83,52 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: M(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camera
+      parentName: M(Clone)
+      position: {x: -7.3588915, y: 4.958309, z: 6.925791}
+      rotation: {x: 0.09062851, y: 0.89379627, z: -0.20997299, w: 0.3857799}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Circle
+      parentName: M(Clone)
+      position: {x: -0, y: 5.5377336, z: 0.04371875}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1.0929062, y: 1.0929062, z: 1.0929062}
+    - name: Cube
+      parentName: M(Clone)
+      position: {x: 0.0013722972, y: 3.478862, z: 0.11317502}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder
+      parentName: M(Clone)
+      position: {x: -0, y: 5.7473516, z: 0.0790096}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.3828112, y: 0.3828112, z: 0.3828112}
+    - name: Icosphere
+      parentName: M(Clone)
+      position: {x: -0.010120697, y: 5.0454893, z: 0.072650425}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.45343032, y: 0.45343032, z: 0.45343032}
+    - name: Light
+      parentName: M(Clone)
+      position: {x: -4.0762453, y: 5.903862, z: -1.005454}
+      rotation: {x: 0.52327543, y: -0.34203398, z: 0.72694236, w: 0.2841663}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Sphere
+      parentName: M(Clone)
+      position: {x: 0.30376476, y: 5.0535254, z: -0.15599334}
+      rotation: {x: -0.7041767, y: 0.064305015, z: 0.064305015, w: 0.7041767}
+      scale: {x: 0.084827036, y: 0.084827036, z: 0.084827036}
+    - name: Sphere.001
+      parentName: M(Clone)
+      position: {x: 0.30376476, y: 5.0567455, z: 0.3257804}
+      rotation: {x: -0.671044, y: -0.031882003, z: -0.025912436, w: 0.74027836}
+      scale: {x: 0.084827036, y: 0.084827036, z: 0.084827036}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -94,13 +139,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
