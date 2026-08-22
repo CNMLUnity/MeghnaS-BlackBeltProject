@@ -28,29 +28,23 @@ public class Guard : MonoBehaviour
         if (spawn.number > 15.8)
         {
             agent.SetDestination (Player.transform.position);
-            Debug.Log(agent.destination);
         }
     }
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player" && PlayerMove.isKicking == true)
         {
-
-            Debug.LogWarning("Player has deactivated guard.");
             guard.SetActive(false);
         }        
 
         else if(other.gameObject.tag == "Player" && PlayerMove.isPunching == true)
         {
-
-            Debug.LogWarning("Player has deactivated guard.");
             guard.SetActive(false);
         }
         else if(other.gameObject.tag == "Player")
         {
             Player.SetActive(false);
             SceneManager.LoadScene(12);
-            Debug.LogWarning("Player has collided without defense and lost health.");
         }
     }
 }

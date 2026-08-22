@@ -22,7 +22,6 @@ public class LvlThreeArrest : MonoBehaviour
         if(arrest.handcuffs.activeSelf == true)
         {
             hasHandcuffs = true;
-            Debug.Log(hasHandcuffs);
         }
 
     }
@@ -33,9 +32,6 @@ public class LvlThreeArrest : MonoBehaviour
         Debug.LogWarning(hasHandcuffs);
         if(other.gameObject.tag == "Player" && hasHandcuffs == true && ThreeTimer.elapsedTime > 0)
         {
-            Debug.LogWarning(hasHandcuffs);
-            //Debug.LogWarning("Player has collided with handcuffs");
-            Debug.LogError("Player has entered trigger");
             SceneManager.LoadScene(currentScene + 1);
         }
         else if (other.gameObject.tag == "Player" && hasHandcuffs == true && ThreeTimer.elapsedTime <= 0)
@@ -43,11 +39,5 @@ public class LvlThreeArrest : MonoBehaviour
             SceneManager.LoadScene(12);
         }
     }
-    /*
-        Notes from dunedin 
-
-        the player controller can only collide with trigger colliders so set the trap to be is trigger and use is trigger function here
-    */
-    
 }
 
