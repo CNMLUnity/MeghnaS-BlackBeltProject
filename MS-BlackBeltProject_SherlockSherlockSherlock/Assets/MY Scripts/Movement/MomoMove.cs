@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -24,6 +23,7 @@ public class MomoMove : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         momo = GetComponent<Animator>();
+        momo.SetFloat("MomoSpeed", 10f);
     }
 
     // Update is called once per frame
@@ -34,7 +34,6 @@ public class MomoMove : MonoBehaviour
         direction.y = 0;
         Quaternion targetRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-        Debug.Log(agent.destination);
     }
     void OnTriggerStay(Collider other)
     {
@@ -49,14 +48,34 @@ public class MomoMove : MonoBehaviour
         switch (attackTypes)
         {
             case 1:
-                momo.SetTrigger("MomoPunch");
+                momo.SetBool("MomoPunch", true);
                 break;
             case 2:
-                momo.SetTrigger("Hurricane Kick");
+                momo.SetBool("Hurricane Kick", true);
                 break;
             case 3:
-                momo.SetTrigger("Strangle");
+                momo.SetBool("Strangle", true);
                 break;
+        }
+        if(PlayerMove.isPunching == true || PlayerMove.isKicking == true)
+        {
+            int defenseTypes = Random.Range(1, 3);
+            switch (defenseTypes)
+            {
+                case 1:
+                    momo.SetBool("Dodge", true);
+                    break;
+                case 2:
+                    momo.SetBool("React", true);
+                    break;
+            }
+        }
+    }
+    private void FallAndDie()
+    {
+        if(transform.position.y < 58.92222)
+        {
+            momo.SetBool("MomoFall", true);
         }
     }
 }
