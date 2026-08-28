@@ -9,6 +9,8 @@ TagManager:
   - Ground
   - Water
   - Enemy
+  - Background music
+  - Final level music
   layers:
   - Default
   - TransparentFX
