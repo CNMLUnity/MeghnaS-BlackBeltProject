@@ -23,11 +23,7 @@ public class FinalSceneDeaths : MonoBehaviour
         {
             SceneManager.LoadScene (12);
         }
-        if (other.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene (1);
-        }
-        if (other.gameObject.tag == "Player" && other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Enemy")
         {
             SceneManager.LoadScene (1);
         }

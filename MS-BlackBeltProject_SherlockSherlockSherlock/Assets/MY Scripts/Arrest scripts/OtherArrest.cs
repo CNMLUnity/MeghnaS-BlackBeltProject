@@ -30,6 +30,8 @@ public class OtherArrest : MonoBehaviour
         {
             print(currentScene + 1);
             print(hasHandcuffs);
+            //print("Player has collided with handcuffs");
+            //print("Player has entered trigger");
             SceneManager.LoadScene(currentScene + 1);
         }
     }
