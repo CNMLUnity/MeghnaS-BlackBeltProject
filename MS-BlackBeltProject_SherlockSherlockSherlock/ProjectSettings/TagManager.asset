@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - Background music
   - Final level music
+  - Guard
   layers:
   - Default
   - TransparentFX

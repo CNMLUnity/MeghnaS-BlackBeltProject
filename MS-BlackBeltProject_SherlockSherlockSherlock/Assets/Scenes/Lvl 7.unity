@@ -2069,6 +2069,7 @@ GameObject:
   - component: {fileID: 521230120}
   - component: {fileID: 521230119}
   - component: {fileID: 521230118}
+  - component: {fileID: 521230123}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2184,6 +2185,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &521230123
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521230117}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &555704414
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,6 +3959,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 247b0aae2374eb64998ff8dce7c08e0a, type: 3}
       propertyPath: m_Name
       value: Guard1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 247b0aae2374eb64998ff8dce7c08e0a, type: 3}
+      propertyPath: m_TagString
+      value: Guard
       objectReference: {fileID: 0}
     - target: {fileID: 8632055958874330854, guid: 247b0aae2374eb64998ff8dce7c08e0a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5772,6 +5799,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 247b0aae2374eb64998ff8dce7c08e0a, type: 3}
       propertyPath: m_Name
       value: Guard1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 247b0aae2374eb64998ff8dce7c08e0a, type: 3}
+      propertyPath: m_TagString
+      value: Guard
       objectReference: {fileID: 0}
     - target: {fileID: 8632055958874330854, guid: 247b0aae2374eb64998ff8dce7c08e0a, type: 3}
       propertyPath: m_LocalPosition.y
