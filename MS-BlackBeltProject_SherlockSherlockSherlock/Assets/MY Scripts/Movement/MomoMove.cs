@@ -34,29 +34,33 @@ public class MomoMove : MonoBehaviour
         direction.y = 0;
         Quaternion targetRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        momo.SetFloat("MomoSpeed", agent.velocity.magnitude);
     }
     void OnTriggerStay(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
             AttackSherlock();
+
         }
     }
     private void AttackSherlock()
     {
-        int attackTypes = Random.Range(1, 4);
+        int attackTypes = Random.Range(1, 3);
+        Debug.Log(attackTypes);
         switch (attackTypes)
         {
             case 1:
-                momo.SetBool("MomoPunch", true);
+                momo.SetTrigger("MomoPunch");
                 break;
             case 2:
-                momo.SetBool("Hurricane Kick", true);
+                momo.SetTrigger("MomoKick");
                 break;
             case 3:
-                momo.SetBool("Strangle", true);
+                momo.SetTrigger("MomoStrangle");
                 break;
         }
+
         if(PlayerMove.isPunching == true || PlayerMove.isKicking == true)
         {
             int defenseTypes = Random.Range(1, 3);

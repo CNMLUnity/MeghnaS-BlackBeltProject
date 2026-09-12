@@ -15459,6 +15459,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c6e9956ed7b22648863d940bfae162f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2115182656}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c6e9956ed7b22648863d940bfae162f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2115182660}
   m_SourcePrefab: {fileID: 100100000, guid: 0c6e9956ed7b22648863d940bfae162f, type: 3}
 --- !u!1 &659619185
 GameObject:
@@ -42094,6 +42097,29 @@ MonoBehaviour:
   agent: {fileID: 2115182657}
   ground: {fileID: 1053049140}
   rotationSpeed: 10
+--- !u!136 &2115182660
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115182654}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.37
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
