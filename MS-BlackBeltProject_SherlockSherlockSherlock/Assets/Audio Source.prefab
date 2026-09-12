@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7941345297901870281}
   - component: {fileID: 4523559566692906345}
+  - component: {fileID: 6334547333846924452}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Background music
@@ -129,3 +130,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6334547333846924452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8538547723075324478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06de4c84d50e3394ba34e10f194a182d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwitchTrack
+  initial: {fileID: 8300000, guid: 2e5a489fc9fecee4b943539f5314730f, type: 3}
+  final: {fileID: 8300000, guid: f15b625e6a6b3ba41a1074162123720c, type: 3}
