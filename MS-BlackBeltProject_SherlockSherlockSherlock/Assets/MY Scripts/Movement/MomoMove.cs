@@ -47,6 +47,7 @@ public class MomoMove : MonoBehaviour
     private void AttackSherlock()
     {
         int attackTypes = Random.Range(1, 3);
+        
         Debug.Log(attackTypes);
         switch (attackTypes)
         {
