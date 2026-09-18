@@ -1,6 +1,8 @@
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+
 
 public class MomoMove : MonoBehaviour
 {
@@ -18,12 +20,17 @@ public class MomoMove : MonoBehaviour
     private Animation Strangle;
     public GameObject ground;
     public float rotationSpeed = 10f;
+    public float force = 25;
+    private Rigidbody rb;
+    private Vector3 direction;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         agent = GetComponent<NavMeshAgent>();
-        momo = GetComponent<Animator>();
+        momo = GetComponentInChildren<Animator>();
         momo.SetFloat("MomoSpeed", 10f);
+        
     }
 
     // Update is called once per frame
@@ -41,7 +48,7 @@ public class MomoMove : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             AttackSherlock();
-
+            rb.AddForce(force * direction, ForceMode.Impulse);
         }
     }
     private void AttackSherlock()
