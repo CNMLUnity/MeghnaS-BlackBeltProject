@@ -63,15 +63,14 @@ public class Push : MonoBehaviour
     }
 
     // Detects when the Enemy strikes the Player
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag(playerTag))
-        {
-            SherlockPush player = other.GetComponent<SherlockPush>();
-            if (player != null)
-            {
-                player.TakeKnockback(transform.position, enemyAttackForce);
-            }
-        }
+    //private void OnTriggerEnter(Collider other)
+    //{
+        //if (other.CompareTag(playerTag))
+        //{
+            //SherlockPush player = other.GetComponent<SherlockPush>();
+            //if (player != null)
+            //{
+                //player.TakeKnockback(transform.position, enemyAttackForce);
+            //}
+        //}
     }
-}
